@@ -9,7 +9,7 @@
 `):t&&t(new Event(u,{target:e}))},Ve=(e,t)=>{let n=(g[e]||[]).indexOf(t);if(n>=0)return g[e][n]=void 0,!0},lt=(e,t,...n)=>{if("HTMLDocument::"+f==oe&&e===f&&!t.toString().match(/jQueryMock/)){w.on(k,c[h].bind(c,e,t,...n));return}if(t&&(e===f||e===_)){let s=ae+e;g[s]=g[s]||[],g[s].push(t),se&&ie([e]);return}return le(e,t,...n)},dt=(e,t,...n)=>{if(e===f){let s=ae+e;Ve(s,t)}return Ot(e,t,...n)};xe(c,{[h]:{get(){return lt},set(){return lt}},[pe]:{get(){return dt},set(){return dt}}});var ne=c.createDocumentFragment(),He=()=>{ne.hasChildNodes()&&(c.head[C](ne),ne=c.createDocumentFragment())},pt={},Le=e=>{if(e)try{let t=new URL(e,c.location.href),n=t.origin;if(n&&!pt[n]&&c.location.host!==t.host){let s=de("link");s.rel="preconnect",s.href=n,ne[C](s),pt[n]=!0,R&&M(He)}}catch{}},we={},Pt=(e,t,n,s)=>{let r=de("link");r.rel=t?"modulepre"+u:"pre"+u,r.as="script",n&&r[v]("crossorigin",n),s&&r[v]("integrity",s);try{e=new URL(e,c.location.href).href}catch{}r.href=e,ne[C](r),we[e]=!0,R&&M(He)},Re=function(...e){let t=de(...e);if(!e||e[0].toUpperCase()!==z||!R)return t;let n=t[v].bind(t),s=t[p].bind(t),r=t[G].bind(t),i=t[V]("attributes").bind(t);return F.forEach(o=>{let a=t[V](o).bind(t),E=t[fe](o).bind(t);W[te+"y"](t,o,{set(d){return o==="type"&&d&&!Ne.test(d)?t[v](o,d):((o==="src"&&d||o==="type"&&d&&t.origsrc)&&n("type",O),d?t[v](m+o,d):t[j](m+o))},get(){let d=t[p](m+o);if(o==="src")try{return new URL(d,c.location.href).href}catch{}return d}}),b(t,"orig"+o,{set(d){return E(d)},get(){return a()}})}),t[v]=function(o,a){if(F.includes(o))return o==="type"&&a&&!Ne.test(a)?n(o,a):((o==="src"&&a||o==="type"&&a&&t.origsrc)&&n("type",O),a?n(m+o,a):t[j](m+o));n(o,a)},t[p]=function(o){let a=F.indexOf(o)>=0?s(m+o):s(o);if(o==="src")try{return new URL(a,c.location.href).href}catch{}return a},t[G]=function(o){return F.indexOf(o)>=0?r(m+o):r(o)},b(t,"attributes",{get(){return[...i()].filter(a=>a.name!=="type").map(a=>({name:a.name.match(new RegExp(m))?a.name.replace(m,""):a.name,value:a.value}))}}),t};Object.defineProperty(Document[y],"createElement",{set(e){e!==Re&&(De=e)},get(){return De||Re}});var Be=new Set,qe=new MutationObserver(e=>{e.forEach(({removedNodes:t,addedNodes:n,target:s})=>{t.forEach(r=>{r.nodeType===1&&z===r[T]&&"origtype"in r&&Be.delete(r)}),n.forEach(r=>{if(r.nodeType===1)if(z===r[T]){if("origtype"in r){if(r.origtype!==O)return}else if(r[p]("type")!==O)return;"origtype"in r||F.forEach(o=>{let a=r[V](o).bind(r),E=r[fe](o).bind(r);b(r,"orig"+o,{set(d){return E(d)},get(){return a()}})});let i=r[p](m+"src");Be.has(r)&&H("Inserted twice",r),r.parentNode?(Be.add(r),(i||"").match(/\/gtm.js\?/)||r[G]("async")?(ee.push(r),Le(i)):r[G]("defer")?(ye.push(r),Le(i)):(i&&!r[G]("nomodule")&&!we[i]&&(Ye(We(),"pre preload",Z.length),Pt(i,r[p](m+"type")=="module",r[G]("crossorigin")&&r[p]("crossorigin"),r[p]("integrity"))),Z.push(r))):(r[h](u,o=>o.target.parentNode[Q](o.target)),r[h](Ee,o=>o.target.parentNode[Q](o.target)),s[C](r))}else r[T]==="LINK"&&r[p]("as")==="script"&&(we[r[p]("href")]=!0)})})}),Tt={childList:!0,subtree:!0};qe.observe(c.documentElement,Tt);var It=HTMLElement[y].attachShadow;HTMLElement[y].attachShadow=function(e){let t=It.call(this,e);return e.mode==="open"&&qe.observe(t,Tt),t};var ut=W[ze](HTMLIFrameElement[y],"src");b(HTMLIFrameElement[y],"src",{get(){return this.dataset.fpoSrc?this.dataset.fpoSrc:ut.get.call(this)},set(e){delete this.dataset.fpoSrc,ut.set.call(this,e)}});w.on(k,()=>{(!De||De===Re)&&(Document[y].createElement=wt,qe.disconnect()),dispatchEvent(new CustomEvent(ge)),dispatchEvent(new CustomEvent(k))});var ke=e=>{let t,n;!c.currentScript||!c.currentScript.parentNode?(t=c.body,n=t.lastChild):(n=c.currentScript,t=n.parentNode);try{let s=de("div");s.innerHTML=e,Array.from(s.childNodes).forEach(r=>{r.nodeName===z?t.insertBefore(Mt(r),n):t.insertBefore(r,n)})}catch(s){H(s)}},ft=e=>ke(e+`
 `);xe(c,{write:{get(){return ke},set(e){return ke=e}},writeln:{get(){return ft},set(e){return ft=e}}});var Et=(e,t,...n)=>{if(x+f==oe&&e===f&&!t.toString().match(/jQueryMock/)){w.on(k,l[h].bind(l,e,t,...n));return}if(x+u==oe&&e===u){w.on(k,l[h].bind(l,e,t,...n));return}if(t&&(e===u||e===f||e===S&&!se)){let s=e===f?ae+e:x+e;g[s]=g[s]||[],g[s].push(t),se&&ie([e]);return}return B(e,t,...n)},mt=(e,t,...n)=>{if(e===u){let s=e===f?ae+e:x+e;Ve(s,t)}return Dt(e,t,...n)};xe(l,{[h]:{get(){return Et},set(){return Et}},[pe]:{get(){return mt},set(){return mt}}});var Fe=e=>{let t;return{get(){return t},set(n){return t&&Ve(e,n),g[e]=g[e]||[],g[e].push(n),t=n}}};B(je,e=>{let{target:t,event:n}=e.detail,s=t===l?c.body:t,r=s[p](m+"on"+n.type);s[j](m+"on"+n.type);try{let i=new Function("event",r);t===l?l[h](u,i.bind(t,n)):i.call(t,n)}catch(i){console.err(i)}});{let e=Fe(x+u);b(l,"onload",e),le(f,()=>{b(c.body,"onload",e)})}b(c,"onreadystatechange",Fe(ae+_));b(l,"onmessage",Fe(x+S));(()=>{let e=l.innerHeight,t=l.innerWidth,n=r=>{let o={"4g":1250,"3g":2500,"2g":2500}[(navigator.connection||{}).effectiveType]||0,a=r.getBoundingClientRect(),E={top:-1*e-o,left:-1*t-o,bottom:e+o,right:t+o};return!(a.left>=E.right||a.right<=E.left||a.top>=E.bottom||a.bottom<=E.top)},s=(r=!0)=>{let i=1,o=-1,a={},E=()=>{o++,--i||l[ce](w.emit.bind(w,Te),_wpmeteor.rdelay)};Array.from(c.getElementsByTagName("*")).forEach(d=>{let D,Y,$;if(d[T]==="IMG"){let L=d.currentSrc||d.src;L&&!a[L]&&!L.match(/^data:/i)&&((d.loading||"").toLowerCase()!=="lazy"||n(d))&&(D=L)}else if(d[T]===z)Le(d[p](m+"src"));else if(d[T]==="LINK"&&d[p]("as")==="script"&&["pre"+u,"modulepre"+u].indexOf(d[p]("rel"))>=0)we[d[p]("href")]=!0;else if((Y=l.getComputedStyle(d))&&($=(Y.backgroundImage||"").match(/^url\s*\((.*?)\)/i))&&($||[]).length){let L=$[0].slice(4,-1).replace(/"/g,"");!a[L]&&!L.match(/^data:/i)&&(D=L)}if(D){a[D]=!0;let L=new Image;r&&(i++,L[h](u,E),L[h](Ee,E)),L.src=D}}),c.fonts.ready.then(()=>{E()})};_wpmeteor.rdelay===0?le(f,s):B(u,s)})();})();
 //1.0.34
-</script><script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+</script><script type="javascript/blocked" >
 var theplus_ajax_url = "/";
 		var theplus_ajax_post_url = "/";
 		var theplus_nonce = "10923297da";
@@ -235,17 +235,17 @@ var theplus_ajax_url = "/";
 <link rel="stylesheet" id="elementor-icons-happy-icons-css" href="wp-content/plugins/happy-elementor-addons/assets/fonts/style.min_ver-3.12.1.css" media="all"/>
 <link rel="stylesheet" id="elementor-icons-jkiticon-css" href="wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon_ver-2.6.8.css" media="all"/>
 <link rel="stylesheet" id="elementor-icons-dticon-css" href="wp-content/plugins/dethemekit-for-elementor/modules/controls/assets/css/dticon_ver-5.9.0.css" media="all"/>
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-1.12.4-wp.js?ver=6.6.1" id="jquery-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=6.6.1" id="tf-swiper-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-migrate-1.4.1-wp.js?ver=6.6.1" id="jquery-migrate-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://maps.googleapis.com/maps/api/js?key=&amp;libraries=places&amp;sensor=false" id="gmaps-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.23.4" id="font-awesome-4-shim-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="dtk_ajax_load-js-extra">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-1.12.4-wp.js?ver=6.6.1" id="jquery-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=6.6.1" id="tf-swiper-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-migrate-1.4.1-wp.js?ver=6.6.1" id="jquery-migrate-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="https://maps.googleapis.com/maps/api/js?key=&amp;libraries=places&amp;sensor=false" id="gmaps-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.23.4" id="font-awesome-4-shim-js"></script>
+<script type="javascript/blocked"  id="dtk_ajax_load-js-extra">
 var ecs_ajax_params = {"ajaxurl":"/","posts":"{\"error\":\"\",\"m\":\"\",\"p\":\"537\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"537\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs_ajax_pagination.js?ver=2.1.6" id="dtk_ajax_load-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/happy-elementor-addons/assets/vendor/dom-purify/purify.min.js?ver=3.1.6" id="dom-purify-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs.js?ver=2.1.6" id="ecs-script-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs_ajax_pagination.js?ver=2.1.6" id="dtk_ajax_load-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/happy-elementor-addons/assets/vendor/dom-purify/purify.min.js?ver=3.1.6" id="dom-purify-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs.js?ver=2.1.6" id="ecs-script-js"></script>
 <meta name="generator" content="WordPress 6.6.1"/>
 <style>.elementor-widget:not(:last-child) {
     margin-bottom: 0 !important;
@@ -267,7 +267,7 @@ if (!window.twq) {
 twq('config','oi1eh');
 </script>
 <!-- End Twitter conversion tracking base code -->
-<!-- <script  type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+<!-- <script  type="javascript/blocked"  >
 // Initialize previous scroll position and admin bar height
 let wpa;
 let lastScrollY = window.scrollY;
@@ -380,14 +380,14 @@ function isPCMode() {
     return window.innerWidth > 1024;
 }
 </script>
-<script  type="javascript/blocked" data-wpmeteor-type="text/javascript" >
+<script  type="javascript/blocked"  >
 window.addEventListener('elementor/frontend/init', function() {
   elementorFrontend.hooks.addFilter( 'frontend/handlers/menu_anchor/scroll_top_distance', function(scrollTop) {
     return scrollTop - 150;
   })
 })
 </script> -->
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+<script type="javascript/blocked" >
 	  
 document.addEventListener("DOMContentLoaded", function() {
     var megaMenu = document.getElementById('header-megamenu');
@@ -448,11 +448,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N8MCLLB');</script>
 <!-- End Google Tag Manager -->
 <!-- TrustBox script -->
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<script type="javascript/blocked"  data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <!-- End TrustBox script -->
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://cdn.pagesense.io/js/812761410/f67abf6f9f3742c6bab194b236c002d8.js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="https://cdn.pagesense.io/js/812761410/f67abf6f9f3742c6bab194b236c002d8.js"></script>
 <!-- TrustBox script -->
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<script type="javascript/blocked"  data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <!-- End TrustBox script -->
   <link rel="stylesheet" href="bootstrap/4.3.1/css/bootstrap.min.css" >
 			<style>
@@ -473,8 +473,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					}
 				}
 			</style>
-			<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="google_gtagjs" data-wpmeteor-src="https://www.googletagmanager.com/gtag/js?id=G-N29L8Z28LP" async></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="google_gtagjs-inline">
+			<script type="javascript/blocked"  id="google_gtagjs" data-wpmeteor-src="https://www.googletagmanager.com/gtag/js?id=G-N29L8Z28LP" async></script>
+<script type="javascript/blocked"  id="google_gtagjs-inline">
 window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-N29L8Z28LP', {} );
 </script>
 <link rel="icon" href="wp-content/uploads/2021/06/Favicon-16x16-FXBO-01.png" sizes="32x32"/>
@@ -2324,8 +2324,8 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
 <div class="header-modal-footer"></div>
 </div>
 </div>
-<script id="fuse-script" type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.0/fuse.min.js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+<script id="fuse-script" type="javascript/blocked"  data-wpmeteor-src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.0/fuse.min.js"></script>
+<script type="javascript/blocked" >
     const searchButtonHeader = document.querySelector(".header-search-button");
     const searchModal = document.getElementById("header-search-modal");
     const resultsCount = document.getElementById("header-results-count");
@@ -2731,7 +2731,7 @@ document.addEventListener("touchend", () => {
 						<div class="elementor-element elementor-element-252af2e de_scroll_animation_no ha-has-bg-overlay elementor-widget elementor-widget-html" data-id="252af2e" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			<div id="quotesWidgetTicker"></div>
-<script async type="javascript/blocked" data-wpmeteor-type="text/javascript" data-type="quotes-widget" data-wpmeteor-src="https://c.mql5.com/js/widgets/quotes/widget.js?v=1">
+<script async type="javascript/blocked"  data-type="quotes-widget" data-wpmeteor-src="https://c.mql5.com/js/widgets/quotes/widget.js?v=1">
   {"type":"ticker","filter":["EURUSD","USDJPY","GBPUSD","AUDUSD","USDCAD","USDCHF","NZDUSD"],"width":"100%","height":50,"id":"quotesWidgetTicker"}
 </script>		</div>
 				</div>
@@ -5445,7 +5445,7 @@ document.addEventListener("touchend", () => {
 					</div>
 		</section>
 				</div>
-			<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+			<script type="javascript/blocked" >
 				const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
@@ -5503,112 +5503,112 @@ document.addEventListener("touchend", () => {
 <link rel="stylesheet" id="elementor-post-72317-css" href="wp-content/uploads/elementor/css/post-72317_ver-1725448555.css" media="all"/>
 <link rel="stylesheet" id="eael-72319-css" href="wp-content/uploads/essential-addons-elementor/eael-72319_ver-1720605483.css" media="all"/>
 <link rel="stylesheet" id="elementor-post-72319-css" href="wp-content/uploads/elementor/css/post-72319_ver-1725448555.css" media="all"/>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="eael-general-js-extra">
+<script type="javascript/blocked"  id="eael-general-js-extra">
 var localize = {"ajaxurl":"/","nonce":"1b41c5b592","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/baxiamarkets.com\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http:\/\/wiki.lexisnexis.com\/academic\/images\/f\/fb\/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"},"eael_login_nonce":"3ea8e3e5be","eael_register_nonce":"c7d0d6cdcc","eael_lostpassword_nonce":"3fc2ff8775","eael_resetpassword_nonce":"a6b93fb376"};
 </script>
-<!-- <script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.0.3" id="eael-general-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-66.js?ver=1720605483" id="eael-66-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-110.js?ver=1720605483" id="eael-110-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/anime.min.js?ver=6.6.1" id="tf-anime-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/textanimation.js?ver=6.6.1" id="textanimation-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/tf-animated.js?ver=6.6.1" id="tf-animated-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
+<!-- <script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.0.3" id="eael-general-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-66.js?ver=1720605483" id="eael-66-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-110.js?ver=1720605483" id="eael-110-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/anime.min.js?ver=6.6.1" id="tf-anime-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/textanimation.js?ver=6.6.1" id="textanimation-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/themesflat-addons-for-elementor/assets/js/tf-animated.js?ver=6.6.1" id="tf-animated-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="javascript/blocked"  id="qi-addons-for-elementor-script-js-extra">
 var qodefQiAddonsGlobal = {"vars":{"adminBarHeight":0,"iconArrowLeft":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>","iconArrowRight":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>","iconClose":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"}};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=1.7.8" id="qi-addons-for-elementor-script-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.3" id="jquery-ui-slider-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//baxiamarkets.com/wp-content/uploads/theplus-addons/theplus-post-537.min.js?ver=1725449513" id="theplus-front-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-537.js?ver=1720605483" id="eael-537-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.0" id="cute-alert-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="happy-elementor-addons-js-extra">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=1.7.8" id="qi-addons-for-elementor-script-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.3" id="jquery-ui-slider-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="//baxiamarkets.com/wp-content/uploads/theplus-addons/theplus-post-537.min.js?ver=1725449513" id="theplus-front-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-537.js?ver=1720605483" id="eael-537-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.0" id="cute-alert-js"></script>
+<script type="javascript/blocked"  id="happy-elementor-addons-js-extra">
 var HappyLocalize = {"ajax_url":"/","nonce":"68f662a514","pdf_js_lib":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.12.1" id="happy-elementor-addons-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.2.7" id="elementskit-framework-js-frontend-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.12.1" id="happy-elementor-addons-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.2.7" id="elementskit-framework-js-frontend-js"></script>
+<script type="javascript/blocked"  id="elementskit-framework-js-frontend-js-after">
 		var elementskit = {
 			resturl: '/wp-json/elementskit/v1/',
 		}
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.2.7" id="ekit-widget-scripts-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.4" id="elementor-webpack-runtime-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.4" id="elementor-frontend-modules-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-frontend-js-before">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.2.7" id="ekit-widget-scripts-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.4" id="elementor-webpack-runtime-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.4" id="elementor-frontend-modules-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="javascript/blocked"  id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"/"},"nonces":{"floatingButtonsClickTracking":"c9bdc24af7"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":537,"title":"CFDs%20%26%20Forex%20Trading%20%7C%20Regulated%20Online%20Trading%20%7C%20Baxia%20Markets","excerpt":"","featuredImage":"https:\/\/baxiamarkets.com\/wp-content\/uploads\/2021\/06\/Baxia-Logo_Yellow_Black-01-1024x207.png"}};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-frontend-js-after">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
+<script type="javascript/blocked"  id="elementor-frontend-js-after">
 var jkit_ajax_url = "/?jkit-ajax-request=jkit_elements", jkit_nonce = "6c0ce66cd3";
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.8" id="jkit-sticky-element-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.23.3" id="e-sticky-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="premium-addons-js-extra">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.8" id="jkit-sticky-element-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.23.3" id="e-sticky-js"></script>
+<script type="javascript/blocked"  id="premium-addons-js-extra">
 var PremiumSettings = {"ajaxurl":"/","nonce":"27b088cf95"};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/premium-addons.min.js?ver=4.10.50" id="premium-addons-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64759.js?ver=1720605483" id="eael-64759-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64793.js?ver=1720605483" id="eael-64793-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64805.js?ver=1720605483" id="eael-64805-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64825.js?ver=1720605483" id="eael-64825-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64839.js?ver=1720605483" id="eael-64839-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64847.js?ver=1720605483" id="eael-64847-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64858.js?ver=1720605483" id="eael-64858-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-column-clickable.js?ver=1.0.0" id="de-column-clickable-elementor-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65554.js?ver=1720605483" id="eael-65554-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65564.js?ver=1720605483" id="eael-65564-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65578.js?ver=1720605483" id="eael-65578-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65588.js?ver=1720605483" id="eael-65588-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-72317.js?ver=1720605483" id="eael-72317-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-72319.js?ver=1720605483" id="eael-72319-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/ResizeSensor.min.js?ver=1.7.0" id="de-resize-sensor-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/sticky-sidebar/sticky-sidebar.min.js?ver=3.3.1" id="de-sticky-sidebar-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/jsticky/jquery.jsticky.js?ver=1.1.0" id="jsticky-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="wp-i18n-js-after">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/premium-addons.min.js?ver=4.10.50" id="premium-addons-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64759.js?ver=1720605483" id="eael-64759-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64793.js?ver=1720605483" id="eael-64793-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64805.js?ver=1720605483" id="eael-64805-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64825.js?ver=1720605483" id="eael-64825-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64839.js?ver=1720605483" id="eael-64839-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64847.js?ver=1720605483" id="eael-64847-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-64858.js?ver=1720605483" id="eael-64858-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-column-clickable.js?ver=1.0.0" id="de-column-clickable-elementor-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65554.js?ver=1720605483" id="eael-65554-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65564.js?ver=1720605483" id="eael-65564-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65578.js?ver=1720605483" id="eael-65578-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-65588.js?ver=1720605483" id="eael-65588-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-72317.js?ver=1720605483" id="eael-72317-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/uploads/essential-addons-elementor/eael-72319.js?ver=1720605483" id="eael-72319-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/ResizeSensor.min.js?ver=1.7.0" id="de-resize-sensor-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/sticky-sidebar/sticky-sidebar.min.js?ver=3.3.1" id="de-sticky-sidebar-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/jsticky/jquery.jsticky.js?ver=1.1.0" id="jsticky-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="javascript/blocked"  id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/qi-addons-for-elementor/inc/plugins/elementor/assets/js/elementor.js?ver=6.6.1" id="qi-addons-for-elementor-elementor-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.23.3" id="elementor-pro-webpack-runtime-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-pro-frontend-js-before">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/qi-addons-for-elementor/inc/plugins/elementor/assets/js/elementor.js?ver=6.6.1" id="qi-addons-for-elementor-elementor-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.23.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="javascript/blocked"  id="elementor-pro-frontend-js-before">
 var ElementorProFrontendConfig = {"ajaxurl":"/","nonce":"2937746d28","urls":{"assets":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/baxiamarkets.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"wp-content/plugins/elementor-pro/modules/lottie/assets/animations/default.js"}};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="de-sticky-frontend-js-extra">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
+<script type="javascript/blocked"  id="de-sticky-frontend-js-extra">
 var DeStickySettings = {"elements_data":{"sections":[],"columns":[]}};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-sticky-frontend.js?ver=2.1.6" id="de-sticky-frontend-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-icon-box.js?ver=2.1.6" id="de-active-icon-box-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-column.js?ver=2.1.6" id="de-active-column-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.2.7" id="animate-circle-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementskit-elementor-js-extra">
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-sticky-frontend.js?ver=2.1.6" id="de-sticky-frontend-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-icon-box.js?ver=2.1.6" id="de-active-icon-box-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-column.js?ver=2.1.6" id="de-active-column-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.2.7" id="animate-circle-js"></script>
+<script type="javascript/blocked"  id="elementskit-elementor-js-extra">
 var ekit_config = {"ajaxurl":"/","nonce":"ed6e7b794a"};
 </script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.2.7" id="elementskit-elementor-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/anime.min.js?ver=6.6.1" id="dethemekit-anime-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/scrollMonitor.js?ver=6.6.1" id="de-scroll-animation-scrollmonitor-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_scroll_animation.preview.js?ver=6.6.1" id="de-scroll-animation-preview-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/intersectionobserver.js?ver=6.6.1" id="de-reveal-animation-intersection-observer-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/charming.min.js?ver=6.6.1" id="de-reveal-letter-charming-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/lineMaker.js?ver=6.6.1" id="de-reveal-letter-lineMaker-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/imagesloaded.pkgd.min.js?ver=6.6.1" id="de-reveal-letter-imagesloaded-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/textfx.js?ver=6.6.1" id="de-reveal-letter-textfx-js-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/main.js?ver=6.6.1" id="de-curtain-animation-main-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_reveal_animation.preview.js?ver=6.6.1" id="de-reveal-animation-preview-js"></script>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_staggering/de_staggering.js?ver=6.6.1" id="de-staggering-js"></script> -->
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.2.7" id="elementskit-elementor-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/anime.min.js?ver=6.6.1" id="dethemekit-anime-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/scrollMonitor.js?ver=6.6.1" id="de-scroll-animation-scrollmonitor-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_scroll_animation.preview.js?ver=6.6.1" id="de-scroll-animation-preview-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/intersectionobserver.js?ver=6.6.1" id="de-reveal-animation-intersection-observer-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/charming.min.js?ver=6.6.1" id="de-reveal-letter-charming-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/lineMaker.js?ver=6.6.1" id="de-reveal-letter-lineMaker-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/imagesloaded.pkgd.min.js?ver=6.6.1" id="de-reveal-letter-imagesloaded-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/textfx.js?ver=6.6.1" id="de-reveal-letter-textfx-js-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/main.js?ver=6.6.1" id="de-curtain-animation-main-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_reveal_animation.preview.js?ver=6.6.1" id="de-reveal-animation-preview-js"></script>
+<script type="javascript/blocked"  data-wpmeteor-src="/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_staggering/de_staggering.js?ver=6.6.1" id="de-staggering-js"></script> -->
 <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
     <!-- Your Chat Plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+<script type="javascript/blocked" >
  // Function load FB's chat
 function loadFbChat(){
       var chatbox = document.getElementById('fb-customer-chat');
@@ -5673,7 +5673,7 @@ else{
 document.body.appendChild(script);
 </script>
 <!-- Add the Zoho's chat embed code -->
-<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="zsiqchat">
+<script type="javascript/blocked"  id="zsiqchat">
   var $zoho = $zoho || {};
   $zoho.salesiq = $zoho.salesiq || {
     widgetcode: "32f8c496776648f475b5d4e360b304e92decfe473e3c5d4c7664bdd7b9ef44defeb79731b60e202192c2895c9acefb61",
