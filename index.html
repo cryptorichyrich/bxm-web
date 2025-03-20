@@ -14,6 +14,50 @@ var theplus_ajax_url = "/";
 		var theplus_ajax_post_url = "/";
 		var theplus_nonce = "10923297da";
 </script>
+<script>
+	// Get modal elements
+	const modal = document.getElementById('myModal');
+	const closeBtn = document.querySelector('.close-btn');
+
+	// Function to show modal
+	function showModal() {
+		modal.style.display = 'flex';
+	}
+
+	// Function to hide modal
+	function hideModal() {
+		modal.style.display = 'none';
+	}
+
+
+	// Close modal when clicking the X
+	closeBtn.addEventListener('click', function(event) {
+		event.stopPropagation(); // Prevents bubbling to document
+		hideModal();
+	});
+
+	// Close modal when clicking outside
+	modal.addEventListener('click', function(event) {
+		if (event.target === modal) {
+			hideModal();
+		}
+	});
+	
+	// Add click listener for buttons and links
+	document.addEventListener('click', function(event) {
+		const target = event.target;
+		if (target.tagName === 'BUTTON' || target.tagName === 'A') {
+			event.preventDefault();
+			showModal();
+			console.log("show modal");
+		}
+	});
+
+	// Prevent clicks inside modal-content from closing it
+	document.querySelector('.modal-content').addEventListener('click', function(event) {
+		event.stopPropagation();
+	});
+</script>
 <!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
 <title>CFDs & Forex Trading | Regulated Online Trading | Baxia Markets</title>
 	<link rel="canonical" href="https://baxiamarkets.com" />
@@ -5712,48 +5756,5 @@ document.body.appendChild(script);
 		font-size: 20px;
 	}
 </style>
-<script>
-	// Get modal elements
-	const modal = document.getElementById('myModal');
-	const closeBtn = document.querySelector('.close-btn');
 
-	// Function to show modal
-	function showModal() {
-		modal.style.display = 'flex';
-	}
-
-	// Function to hide modal
-	function hideModal() {
-		modal.style.display = 'none';
-	}
-
-
-	// Close modal when clicking the X
-	closeBtn.addEventListener('click', function(event) {
-		event.stopPropagation(); // Prevents bubbling to document
-		hideModal();
-	});
-
-	// Close modal when clicking outside
-	modal.addEventListener('click', function(event) {
-		if (event.target === modal) {
-			hideModal();
-		}
-	});
-	
-	// Add click listener for buttons and links
-	document.addEventListener('click', function(event) {
-		const target = event.target;
-		if (target.tagName === 'BUTTON' || target.tagName === 'A') {
-			event.preventDefault();
-			showModal();
-			console.log("show modal");
-		}
-	});
-
-	// Prevent clicks inside modal-content from closing it
-	document.querySelector('.modal-content').addEventListener('click', function(event) {
-		event.stopPropagation();
-	});
-</script>
 </html>
