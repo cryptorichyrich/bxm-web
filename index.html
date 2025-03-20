@@ -5754,20 +5754,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add click listener for buttons and links
   document.addEventListener('click', function(event) {
     const target = event.target;
-    if (target.tagName === 'BUTTON' || target.tagName === 'A') {
       event.preventDefault();
       showModal();
       console.log("show modal ",target.href);
-		}
-	else if (target.href) {
-		event.preventDefault();
-		showModal();
-		console.log("show modal ", target.href);
-	}else if (target.parentNode.tagName === 'A' && target.parentNode.href) {
-    event.preventDefault();
-    showModal();
-    console.log("show modal ", target.parentNode.href);
-  }
   });
 });
 </script>
