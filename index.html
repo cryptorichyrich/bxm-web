@@ -388,16 +388,6 @@ window.addEventListener('elementor/frontend/init', function() {
 })
 </script> -->
 <script type="javascript/blocked" data-wpmeteor-type="text/javascript">
-	document.addEventListener("DOMContentLoaded", function() {
-		const links = document.querySelectorAll("a");
-		
-		links.forEach(function(link) {
-		  link.addEventListener("click", function(event) {
-			event.preventDefault(); // Mencegah link dibuka
-			alert("We are not accepting any new client");
-		  });
-		});
-	  });
 	  
 document.addEventListener("DOMContentLoaded", function() {
     var megaMenu = document.getElementById('header-megamenu');
@@ -5685,4 +5675,20 @@ document.body.appendChild(script);
   };
 </script>
 <center><font size="2">This is a website recovered by the free version of the <a href="http://www.waybackmachinedownloads.com">Wayback Downloader.</a></font></center></body>
+<script>
+	document.addEventListener('click', function(event) {
+		// Check if the clicked element is a button or an anchor tag
+		if (event.target.tagName === 'BUTTON' || event.target.tagName === 'A') {
+			event.preventDefault(); // Prevents default behavior (like following links)
+			alert("We're not accepting new clients");
+		}
+	});
+
+	document.querySelectorAll('button, a').forEach(element => {
+		element.addEventListener('click', function(event) {
+			event.preventDefault();
+			alert("We're not accepting new clients");
+		});
+	});	
+</script>
 </html>
