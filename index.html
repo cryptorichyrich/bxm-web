@@ -5711,6 +5711,9 @@ document.body.appendChild(script);
 		cursor: pointer;
 		font-size: 20px;
 	}
+	a {
+		pointer-events:none;
+	}	
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -5763,10 +5766,8 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault();
     showModal();
     console.log("show modal ", target.parentNode.href);
-  	}
+  }
   });
 });
-
-	
 </script>
 </html>
