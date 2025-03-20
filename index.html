@@ -5727,15 +5727,6 @@ document.body.appendChild(script);
 		modal.style.display = 'none';
 	}
 
-	// Add click listener for buttons and links
-	document.addEventListener('click', function(event) {
-		const target = event.target;
-		if (target.tagName === 'BUTTON' || target.tagName === 'A') {
-			event.preventDefault();
-			showModal();
-			console.log("show modal");
-		}
-	});
 
 	// Close modal when clicking the X
 	closeBtn.addEventListener('click', function(event) {
@@ -5747,6 +5738,16 @@ document.body.appendChild(script);
 	modal.addEventListener('click', function(event) {
 		if (event.target === modal) {
 			hideModal();
+		}
+	});
+	
+	// Add click listener for buttons and links
+	document.addEventListener('click', function(event) {
+		const target = event.target;
+		if (target.tagName === 'BUTTON' || target.tagName === 'A') {
+			event.preventDefault();
+			showModal();
+			console.log("show modal");
 		}
 	});
 
