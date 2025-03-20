@@ -5753,8 +5753,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (target.tagName === 'BUTTON' || target.tagName === 'A') {
       event.preventDefault();
       showModal();
-      console.log("show modal");
-    }
+      console.log("show modal ",target.href);
+		}
+	else if (target.href) {
+		event.preventDefault();
+		showModal();
+		console.log("show modal ", target.href);
+	}	
   });
 });
 
