@@ -5759,7 +5759,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		event.preventDefault();
 		showModal();
 		console.log("show modal ", target.href);
-	}	
+	}else if (target.parentNode.tagName === 'A' && target.parentNode.href) {
+    event.preventDefault();
+    showModal();
+    console.log("show modal ", target.parentNode.href);
+  	}
   });
 });
 
