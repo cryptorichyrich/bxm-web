@@ -1,15 +1,11 @@
 # invoke rewrite engine
 RewriteEngine On
-RewriteBase /scraping/files/demo/baxiamarkets.com_fxwisdom1_gmail.com_46g8yvy4v1/
+RewriteBase /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/
 
 Options -Indexes
 <IfModule mod_negotiation.c>
 	Options -MultiViews
 </IfModule>
-
-# Prevent scraping from archive for free demo
-RewriteCond %{HTTP_USER_AGENT} (ia_archiver) [NC]
-RewriteRule . - [F,L]
 
 # Add a trailing slash (/) to a URL
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -17,11 +13,218 @@ RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]*$
 RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
 
 # Specific redirections
-RewriteRule ^index\.html$ /scraping/files/demo/baxiamarkets.com_fxwisdom1_gmail.com_46g8yvy4v1/ [L,R=301]
+RewriteRule ^index\.html$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301]
+RewriteRule ^cent-account$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^metatrader-5-mac-os$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^company-news/page/2$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^company-news/page/3$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^advantages-technical-analysis$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
 RewriteCond %{QUERY_STRING} ^page_id=63399$
-RewriteRule ^/?$ /scraping/files/demo/baxiamarkets.com_fxwisdom1_gmail.com_46g8yvy4v1/page_id-63399/ [L,R=301,QSD]
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/page_id-63399/ [L,R=301,QSD]
 RewriteCond %{QUERY_STRING} ^page_id=47450$
-RewriteRule ^/?$ /scraping/files/demo/baxiamarkets.com_fxwisdom1_gmail.com_46g8yvy4v1/page_id-47450/ [L,R=301,QSD]
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/page_id-47450/ [L,R=301,QSD]
+RewriteRule ^category/trading-platforms$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/metals-trading$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/index-trading$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/forex-trading$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/energies-trading$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/cryptocurrency-trading$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^category/trading-schedule/page/2$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^faq/about-baxia-markets$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^german-consumer-price-index-cpi-eur$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^german-manufacturing-pmi-eur$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^german-services-pmi-eur$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^chapter-8-advanced-forex-trading-concepts$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^head-and-shoulders-patterns-in-technical-analysis$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^faq/deposits-withdrawals/how-do-i-deposit-money-faq$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^trading-singapore-30-index-sing30$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^spx-spx500$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^trading-ftse-100-index-uk100$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^trading-dow-jones-industrial-average-us30$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^china-manufacturing-pmi-impact-cny$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^trading-usoil$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^trading-xauusd$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteRule ^switzerland-cpi-impacts-chf$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=225&pid=10030$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/lid-225-pid-10030/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^from=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk-bWVnYWZvcnR1bmVfZXU=&token=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk&affcode=bWVnYWZvcnR1bmVfZXU\%3D$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872799$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872807$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872811$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872819$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872827$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872835$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872843$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961941$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961945$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961949$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240528289$
+RewriteRule ^baxia-partners-with-financial-commission/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=205412762$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=208814934$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=207412893$
+RewriteRule ^en/learn-to-trade/trading-basics/eur-usd/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=206572922$
+RewriteRule ^en/learn-to-trade/trading-basics/real-time-forex-trading/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144138770$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144139302$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144146392$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144385715$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144410020$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144411600$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144417175$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144418921$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144732389$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=145304270$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872803$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872815$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872823$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872831$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872839$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961937$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961953$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240529964$
+RewriteRule ^metatrader-applications-back-on-apples-app-store/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^CFID=206348142&CFTOKEN=72741288&jsessionid=be309cee476475d953bb1c685d4066182346$
+RewriteRule ^404\.html$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/404_CFID-206348142-CFTOKEN-72741288-jsessionid-be309cee476475d953bb1c685d4066182346/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^gunoad_cid=$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/gunoad_cid/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^iampartner=125&subid=release&ref=partner\.jpc\.de$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/iampartner-125-subid-release-ref-partner.jpc/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^jkit-ajax-request=jkit_elements$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/jkit-ajax-request-jkit_elements/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=32&pid=10170$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/lid-32-pid-10170/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^page_id=297$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/page_id-297/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^page_id=329$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/page_id-329/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s={search_term_string}$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/s-{search_term_string}/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^sso=0$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/sso-0/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^x=eyJhbGciOiJIUzI1NiJ9\.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9\.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw$
+RewriteRule ^/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/x-eyJhbGciOiJIUzI1NiJ9.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^baxia-markets-launches-mam-pamm-api-solutions/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/baxia-markets-launches-mam-pamm-api-solutions/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^bear-market/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/bear-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^british-pound/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/british-pound/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^bull-market/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/bull-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^commodity-definition/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/commodity-definition/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^currency/eur-usd/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/currency/eur-usd/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^currency/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/currency/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^economic-calendar/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/economic-calendar/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/central-banks/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/intro-to-financial-markets/central-banks/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/otc-market-forex/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/intro-to-financial-markets/otc-market-forex/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/managing-risk/stop-loss-order/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/managing-risk/stop-loss-order/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/eur-usd/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/eur-usd/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/forex-supply-and-demand/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/forex-supply-and-demand/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/forex-trading-for-beginners/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/forex-trading-for-beginners/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/interest-rates-forex-trading/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/interest-rates-forex-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/japanese-yen/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/japanese-yen/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/real-time-forex-trading/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/real-time-forex-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/trading-psychology/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/learn-to-trade/trading-basics/trading-psychology/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/113-Test\sPage\s6$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/113-TestPage6/ [L,R=301,QSD]
+RewriteRule ^en/page/123-Bitcoin\sCash$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/123-BitcoinCash/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/155-introduction-to-financial-markets/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/155-introduction-to-financial-markets_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/169-markets/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/169-markets_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/17-cryptocurrencies/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/17-cryptocurrencies_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/21-metals-&-energy$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/21-metals---energy/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/21-metals-&-energy/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/21-metals---energy_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/22-index-cfd/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/22-index-cfd_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/24-spreads-&-commissions$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/24-spreads---commissions/ [L,R=301,QSD]
+RewriteRule ^en/page/28-margin-&-leverage$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/28-margin---leverage/ [L,R=301,QSD]
+RewriteRule ^en/page/34-metatrader\s-4$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/34-metatrader-4/ [L,R=301,QSD]
+RewriteRule ^en/page/34-metatrader\s4$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/34-metatrader4/ [L,R=301,QSD]
+RewriteRule ^en/page/39-MetaTrader\s4\sFor\sAndroid$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/39-MetaTrader4ForAndroid/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/56-economic-calendar/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/page/56-economic-calendar_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=10&pid=10043$
+RewriteRule ^en/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/en/lid-10-pid-10043/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^head-and-shoulders-pattern/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/head-and-shoulders-pattern/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^q=L3MkWGAkYGpjAwV2ZwN3BQV5ZmxjAQN1AmVyZwMaWGAkAQNjWGV2MFHmpFHlAz4yZ3RjWGV2LlHmpGNyZwMyMvHmpGNyZwMzWGAkWGV2MJpyZ3RlZQVjZQZlAwRlAQHmBPHlAzA5WGAkZFHlAaEaWGAkZvHlAatyZ3RyZwMhrvHmpGNyZwMzpPHmpGZjZPHlAzuhMlHmpGRyZwMjpPHmpJuzWGV2MzqjWGAkZN\%3D\%3D-1$
+RewriteRule ^img\.aspx$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/files/uzWGV2MzqjWGAkZN---1_h0s8idrer4udaux7m3kyu6/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^introducing-broker/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/introducing-broker/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^learn-to-trade/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/learn-to-trade/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^metatrader-applications-back-on-apples-app-store/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/metatrader-applications-back-on-apples-app-store/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=htCpGPJBzdXTXbvTWvfhtNzKQKVUge&search-type=strattic-sample&posts-per-page=1$
+RewriteRule ^page/4/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/page/4/s-htCpGPJBzdXTXbvTWvfhtNzKQKVUge-search-type-strattic-sample-posts-per-page-1/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^pip-value/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/pip-value/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^reits/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/reits/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^rivian-ipo-day-traders/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/rivian-ipo-day-traders/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=130&pid=86509$
+RewriteRule ^welcome-bonus/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/welcome-bonus/lid-130-pid-86509/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=34&pid=10170$
+RewriteRule ^welcome-bonus/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/welcome-bonus/lid-34-pid-10170/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^what-is-crypto/?$ /scraping/files/live/baxiamarkets.com_admin_baxiamarkets.com_wpcej55r49/what-is-crypto/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
 
 # Create pretty URLs
 RewriteRule ^([^/]+)/$ $1.html [S=9]

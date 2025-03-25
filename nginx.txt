@@ -2,8 +2,129 @@
 rewrite ^([^.]*[^/])$ $1/ permanent;
 
 # Specific redirections
+rewrite ^/cent-account$ /? permanent;
+rewrite ^/metatrader-5-mac-os$ /? permanent;
+rewrite ^/company-news/page/2$ /? permanent;
+rewrite ^/company-news/page/3$ /? permanent;
+rewrite ^/advantages-technical-analysis$ /? permanent;
 if ($args ~* ^page_id=63399$){ rewrite ^//?$ /page_id-63399/? permanent; }
 if ($args ~* ^page_id=47450$){ rewrite ^//?$ /page_id-47450/? permanent; }
+rewrite ^/category/trading-platforms$ /? permanent;
+rewrite ^/category/metals-trading$ /? permanent;
+rewrite ^/category/index-trading$ /? permanent;
+rewrite ^/category/forex-trading$ /? permanent;
+rewrite ^/category/energies-trading$ /? permanent;
+rewrite ^/category/cryptocurrency-trading$ /? permanent;
+rewrite ^/category/trading-schedule/page/2$ /? permanent;
+rewrite ^/faq/about-baxia-markets$ /? permanent;
+rewrite ^/german-consumer-price-index-cpi-eur$ /? permanent;
+rewrite ^/german-manufacturing-pmi-eur$ /? permanent;
+rewrite ^/german-services-pmi-eur$ /? permanent;
+rewrite ^/chapter-8-advanced-forex-trading-concepts$ /? permanent;
+rewrite ^/head-and-shoulders-patterns-in-technical-analysis$ /? permanent;
+rewrite ^/faq/deposits-withdrawals/how-do-i-deposit-money-faq$ /? permanent;
+rewrite ^/trading-singapore-30-index-sing30$ /? permanent;
+rewrite ^/spx-spx500$ /? permanent;
+rewrite ^/trading-ftse-100-index-uk100$ /? permanent;
+rewrite ^/trading-dow-jones-industrial-average-us30$ /? permanent;
+rewrite ^/china-manufacturing-pmi-impact-cny$ /? permanent;
+rewrite ^/trading-usoil$ /? permanent;
+rewrite ^/trading-xauusd$ /? permanent;
+rewrite ^/switzerland-cpi-impacts-chf$ /? permanent;
+if ($args ~* ^lid=225&pid=10030$){ rewrite ^//?$ /lid-225-pid-10030/? permanent; }
+if ($args ~* ^from=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk-bWVnYWZvcnR1bmVfZXU=&token=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk&affcode=bWVnYWZvcnR1bmVfZXU\%3D$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872799$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872807$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872811$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872819$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872827$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872835$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240872843$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240961941$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240961945$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240961949$){ rewrite ^//?$ /? permanent; }
+if ($args ~* ^utm_content=240528289$){ rewrite ^/baxia-partners-with-financial-commission/?$ /? permanent; }
+if ($args ~* ^utm_content=205412762$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ /? permanent; }
+if ($args ~* ^utm_content=208814934$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ /? permanent; }
+if ($args ~* ^utm_content=207412893$){ rewrite ^/en/learn-to-trade/trading-basics/eur-usd/?$ /? permanent; }
+if ($args ~* ^utm_content=206572922$){ rewrite ^/en/learn-to-trade/trading-basics/real-time-forex-trading/?$ /? permanent; }
+if ($args ~* ^utm_content=144138770$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144139302$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144146392$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144385715$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144410020$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144411600$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144417175$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144418921$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=144732389$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=145304270$){ rewrite ^/en/?$ /? permanent; }
+if ($args ~* ^utm_content=240872803$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240872815$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240872823$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240872831$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240872839$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240961937$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240961953$){ rewrite ^/learn-to-trade/?$ /? permanent; }
+if ($args ~* ^utm_content=240529964$){ rewrite ^/metatrader-applications-back-on-apples-app-store/?$ /? permanent; }
+if ($args ~* ^CFID=206348142&CFTOKEN=72741288&jsessionid=be309cee476475d953bb1c685d4066182346$){ rewrite ^/404\.html$ /404_CFID-206348142-CFTOKEN-72741288-jsessionid-be309cee476475d953bb1c685d4066182346/? permanent; }
+if ($args ~* ^gunoad_cid=$){ rewrite ^//?$ /gunoad_cid/? permanent; }
+if ($args ~* ^iampartner=125&subid=release&ref=partner\.jpc\.de$){ rewrite ^//?$ /iampartner-125-subid-release-ref-partner.jpc/? permanent; }
+if ($args ~* ^jkit-ajax-request=jkit_elements$){ rewrite ^//?$ /jkit-ajax-request-jkit_elements/? permanent; }
+if ($args ~* ^lid=32&pid=10170$){ rewrite ^//?$ /lid-32-pid-10170/? permanent; }
+if ($args ~* ^page_id=297$){ rewrite ^//?$ /page_id-297/? permanent; }
+if ($args ~* ^page_id=329$){ rewrite ^//?$ /page_id-329/? permanent; }
+if ($args ~* ^s={search_term_string}$){ rewrite ^//?$ /s-{search_term_string}/? permanent; }
+if ($args ~* ^sso=0$){ rewrite ^//?$ /sso-0/? permanent; }
+if ($args ~* ^x=eyJhbGciOiJIUzI1NiJ9\.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9\.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw$){ rewrite ^//?$ /x-eyJhbGciOiJIUzI1NiJ9.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/baxia-markets-launches-mam-pamm-api-solutions/?$ /baxia-markets-launches-mam-pamm-api-solutions/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/bear-market/?$ /bear-market/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/british-pound/?$ /british-pound/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/bull-market/?$ /bull-market/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/commodity-definition/?$ /commodity-definition/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/currency/eur-usd/?$ /currency/eur-usd/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/currency/?$ /currency/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/economic-calendar/?$ /economic-calendar/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/central-banks/?$ /en/learn-to-trade/intro-to-financial-markets/central-banks/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ /en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/otc-market-forex/?$ /en/learn-to-trade/intro-to-financial-markets/otc-market-forex/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ /en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/managing-risk/stop-loss-order/?$ /en/learn-to-trade/managing-risk/stop-loss-order/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/?$ /en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/eur-usd/?$ /en/learn-to-trade/trading-basics/eur-usd/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/forex-supply-and-demand/?$ /en/learn-to-trade/trading-basics/forex-supply-and-demand/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/forex-trading-for-beginners/?$ /en/learn-to-trade/trading-basics/forex-trading-for-beginners/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/interest-rates-forex-trading/?$ /en/learn-to-trade/trading-basics/interest-rates-forex-trading/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/japanese-yen/?$ /en/learn-to-trade/trading-basics/japanese-yen/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/real-time-forex-trading/?$ /en/learn-to-trade/trading-basics/real-time-forex-trading/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/learn-to-trade/trading-basics/trading-psychology/?$ /en/learn-to-trade/trading-basics/trading-psychology/hss_channel-tw-1220711315255197696/? permanent; }
+rewrite ^/en/page/113-Test\sPage\s6$ /en/page/113-TestPage6/? permanent;
+rewrite ^/en/page/123-Bitcoin\sCash$ /en/page/123-BitcoinCash/? permanent;
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/155-introduction-to-financial-markets/?$ /en/page/155-introduction-to-financial-markets_hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/169-markets/?$ /en/page/169-markets_hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/17-cryptocurrencies/?$ /en/page/17-cryptocurrencies_hss_channel-tw-1220711315255197696/? permanent; }
+rewrite ^/en/page/21-metals-&-energy$ /en/page/21-metals---energy/? permanent;
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/21-metals-&-energy/?$ /en/page/21-metals---energy_hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/22-index-cfd/?$ /en/page/22-index-cfd_hss_channel-tw-1220711315255197696/? permanent; }
+rewrite ^/en/page/24-spreads-&-commissions$ /en/page/24-spreads---commissions/? permanent;
+rewrite ^/en/page/28-margin-&-leverage$ /en/page/28-margin---leverage/? permanent;
+rewrite ^/en/page/34-metatrader\s-4$ /en/page/34-metatrader-4/? permanent;
+rewrite ^/en/page/34-metatrader\s4$ /en/page/34-metatrader4/? permanent;
+rewrite ^/en/page/39-MetaTrader\s4\sFor\sAndroid$ /en/page/39-MetaTrader4ForAndroid/? permanent;
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/page/56-economic-calendar/?$ /en/page/56-economic-calendar_hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/en/?$ /en/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^lid=10&pid=10043$){ rewrite ^/en/?$ /en/lid-10-pid-10043/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/head-and-shoulders-pattern/?$ /head-and-shoulders-pattern/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^q=L3MkWGAkYGpjAwV2ZwN3BQV5ZmxjAQN1AmVyZwMaWGAkAQNjWGV2MFHmpFHlAz4yZ3RjWGV2LlHmpGNyZwMyMvHmpGNyZwMzWGAkWGV2MJpyZ3RlZQVjZQZlAwRlAQHmBPHlAzA5WGAkZFHlAaEaWGAkZvHlAatyZ3RyZwMhrvHmpGNyZwMzpPHmpGZjZPHlAzuhMlHmpGRyZwMjpPHmpJuzWGV2MzqjWGAkZN\%3D\%3D-1$){ rewrite ^/img\.aspx$ /files/uzWGV2MzqjWGAkZN---1_h0s8idrer4udaux7m3kyu6/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/introducing-broker/?$ /introducing-broker/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/learn-to-trade/?$ /learn-to-trade/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/metatrader-applications-back-on-apples-app-store/?$ /metatrader-applications-back-on-apples-app-store/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^s=htCpGPJBzdXTXbvTWvfhtNzKQKVUge&search-type=strattic-sample&posts-per-page=1$){ rewrite ^/page/4/?$ /page/4/s-htCpGPJBzdXTXbvTWvfhtNzKQKVUge-search-type-strattic-sample-posts-per-page-1/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/pip-value/?$ /pip-value/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/reits/?$ /reits/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/rivian-ipo-day-traders/?$ /rivian-ipo-day-traders/hss_channel-tw-1220711315255197696/? permanent; }
+if ($args ~* ^lid=130&pid=86509$){ rewrite ^/welcome-bonus/?$ /welcome-bonus/lid-130-pid-86509/? permanent; }
+if ($args ~* ^lid=34&pid=10170$){ rewrite ^/welcome-bonus/?$ /welcome-bonus/lid-34-pid-10170/? permanent; }
+if ($args ~* ^hss_channel=tw-1220711315255197696$){ rewrite ^/what-is-crypto/?$ /what-is-crypto/hss_channel-tw-1220711315255197696/? permanent; }
 
 # Create pretty URLs
 rewrite ^/([^/]+)/$ /$1.html last;

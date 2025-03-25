@@ -7,10 +7,6 @@ Options -Indexes
 	Options -MultiViews
 </IfModule>
 
-# Prevent scraping from archive for free demo
-RewriteCond %{HTTP_USER_AGENT} (ia_archiver) [NC]
-RewriteRule . - [F,L]
-
 # Add a trailing slash (/) to a URL
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]*$
@@ -18,10 +14,217 @@ RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
 
 # Specific redirections
 RewriteRule ^index\.html$ / [L,R=301]
+RewriteRule ^cent-account$ / [L,R=301,QSD]
+RewriteRule ^metatrader-5-mac-os$ / [L,R=301,QSD]
+RewriteRule ^company-news/page/2$ / [L,R=301,QSD]
+RewriteRule ^company-news/page/3$ / [L,R=301,QSD]
+RewriteRule ^advantages-technical-analysis$ / [L,R=301,QSD]
 RewriteCond %{QUERY_STRING} ^page_id=63399$
 RewriteRule ^/?$ page_id-63399/ [L,R=301,QSD]
 RewriteCond %{QUERY_STRING} ^page_id=47450$
 RewriteRule ^/?$ page_id-47450/ [L,R=301,QSD]
+RewriteRule ^category/trading-platforms$ / [L,R=301,QSD]
+RewriteRule ^category/metals-trading$ / [L,R=301,QSD]
+RewriteRule ^category/index-trading$ / [L,R=301,QSD]
+RewriteRule ^category/forex-trading$ / [L,R=301,QSD]
+RewriteRule ^category/energies-trading$ / [L,R=301,QSD]
+RewriteRule ^category/cryptocurrency-trading$ / [L,R=301,QSD]
+RewriteRule ^category/trading-schedule/page/2$ / [L,R=301,QSD]
+RewriteRule ^faq/about-baxia-markets$ / [L,R=301,QSD]
+RewriteRule ^german-consumer-price-index-cpi-eur$ / [L,R=301,QSD]
+RewriteRule ^german-manufacturing-pmi-eur$ / [L,R=301,QSD]
+RewriteRule ^german-services-pmi-eur$ / [L,R=301,QSD]
+RewriteRule ^chapter-8-advanced-forex-trading-concepts$ / [L,R=301,QSD]
+RewriteRule ^head-and-shoulders-patterns-in-technical-analysis$ / [L,R=301,QSD]
+RewriteRule ^faq/deposits-withdrawals/how-do-i-deposit-money-faq$ / [L,R=301,QSD]
+RewriteRule ^trading-singapore-30-index-sing30$ / [L,R=301,QSD]
+RewriteRule ^spx-spx500$ / [L,R=301,QSD]
+RewriteRule ^trading-ftse-100-index-uk100$ / [L,R=301,QSD]
+RewriteRule ^trading-dow-jones-industrial-average-us30$ / [L,R=301,QSD]
+RewriteRule ^china-manufacturing-pmi-impact-cny$ / [L,R=301,QSD]
+RewriteRule ^trading-usoil$ / [L,R=301,QSD]
+RewriteRule ^trading-xauusd$ / [L,R=301,QSD]
+RewriteRule ^switzerland-cpi-impacts-chf$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=225&pid=10030$
+RewriteRule ^/?$ lid-225-pid-10030/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^from=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk-bWVnYWZvcnR1bmVfZXU=&token=Cn3KPCgHgcnpM6SezFf7qmNd7ZgqdRLk&affcode=bWVnYWZvcnR1bmVfZXU\%3D$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872799$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872807$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872811$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872819$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872827$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872835$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872843$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961941$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961945$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961949$
+RewriteRule ^/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240528289$
+RewriteRule ^baxia-partners-with-financial-commission/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=205412762$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=208814934$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=207412893$
+RewriteRule ^en/learn-to-trade/trading-basics/eur-usd/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=206572922$
+RewriteRule ^en/learn-to-trade/trading-basics/real-time-forex-trading/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144138770$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144139302$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144146392$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144385715$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144410020$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144411600$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144417175$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144418921$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=144732389$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=145304270$
+RewriteRule ^en/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872803$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872815$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872823$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872831$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240872839$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961937$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240961953$
+RewriteRule ^learn-to-trade/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^utm_content=240529964$
+RewriteRule ^metatrader-applications-back-on-apples-app-store/?$ / [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^CFID=206348142&CFTOKEN=72741288&jsessionid=be309cee476475d953bb1c685d4066182346$
+RewriteRule ^404\.html$ 404_CFID-206348142-CFTOKEN-72741288-jsessionid-be309cee476475d953bb1c685d4066182346/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^gunoad_cid=$
+RewriteRule ^/?$ gunoad_cid/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^iampartner=125&subid=release&ref=partner\.jpc\.de$
+RewriteRule ^/?$ iampartner-125-subid-release-ref-partner.jpc/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^jkit-ajax-request=jkit_elements$
+RewriteRule ^/?$ jkit-ajax-request-jkit_elements/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=32&pid=10170$
+RewriteRule ^/?$ lid-32-pid-10170/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^page_id=297$
+RewriteRule ^/?$ page_id-297/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^page_id=329$
+RewriteRule ^/?$ page_id-329/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s={search_term_string}$
+RewriteRule ^/?$ s-{search_term_string}/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^sso=0$
+RewriteRule ^/?$ sso-0/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^x=eyJhbGciOiJIUzI1NiJ9\.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9\.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw$
+RewriteRule ^/?$ x-eyJhbGciOiJIUzI1NiJ9.eyJhbm9ueW1vdXMiOnRydWUsImNhcnQiOiJmMDdmOGMzMiJ9.BMdcfjXc6maLX2Ib7BUeyr-MSqr-oGrl15dYtuFy3Rw/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^baxia-markets-launches-mam-pamm-api-solutions/?$ baxia-markets-launches-mam-pamm-api-solutions/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^bear-market/?$ bear-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^british-pound/?$ british-pound/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^bull-market/?$ bull-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^commodity-definition/?$ commodity-definition/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^currency/eur-usd/?$ currency/eur-usd/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^currency/?$ currency/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^economic-calendar/?$ economic-calendar/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/central-banks/?$ en/learn-to-trade/intro-to-financial-markets/central-banks/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/?$ en/learn-to-trade/intro-to-financial-markets/forex-vs-stock-market/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/otc-market-forex/?$ en/learn-to-trade/intro-to-financial-markets/otc-market-forex/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/?$ en/learn-to-trade/intro-to-financial-markets/who-trades-forex-financial-institutions/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/managing-risk/stop-loss-order/?$ en/learn-to-trade/managing-risk/stop-loss-order/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/?$ en/learn-to-trade/trading-basics/capital-gains-tax-and-cfd-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/eur-usd/?$ en/learn-to-trade/trading-basics/eur-usd/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/forex-supply-and-demand/?$ en/learn-to-trade/trading-basics/forex-supply-and-demand/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/forex-trading-for-beginners/?$ en/learn-to-trade/trading-basics/forex-trading-for-beginners/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/interest-rates-forex-trading/?$ en/learn-to-trade/trading-basics/interest-rates-forex-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/japanese-yen/?$ en/learn-to-trade/trading-basics/japanese-yen/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/real-time-forex-trading/?$ en/learn-to-trade/trading-basics/real-time-forex-trading/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/learn-to-trade/trading-basics/trading-psychology/?$ en/learn-to-trade/trading-basics/trading-psychology/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/113-Test\sPage\s6$ en/page/113-TestPage6/ [L,R=301,QSD]
+RewriteRule ^en/page/123-Bitcoin\sCash$ en/page/123-BitcoinCash/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/155-introduction-to-financial-markets/?$ en/page/155-introduction-to-financial-markets_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/169-markets/?$ en/page/169-markets_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/17-cryptocurrencies/?$ en/page/17-cryptocurrencies_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/21-metals-&-energy$ en/page/21-metals---energy/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/21-metals-&-energy/?$ en/page/21-metals---energy_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/22-index-cfd/?$ en/page/22-index-cfd_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteRule ^en/page/24-spreads-&-commissions$ en/page/24-spreads---commissions/ [L,R=301,QSD]
+RewriteRule ^en/page/28-margin-&-leverage$ en/page/28-margin---leverage/ [L,R=301,QSD]
+RewriteRule ^en/page/34-metatrader\s-4$ en/page/34-metatrader-4/ [L,R=301,QSD]
+RewriteRule ^en/page/34-metatrader\s4$ en/page/34-metatrader4/ [L,R=301,QSD]
+RewriteRule ^en/page/39-MetaTrader\s4\sFor\sAndroid$ en/page/39-MetaTrader4ForAndroid/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/page/56-economic-calendar/?$ en/page/56-economic-calendar_hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^en/?$ en/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=10&pid=10043$
+RewriteRule ^en/?$ en/lid-10-pid-10043/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^head-and-shoulders-pattern/?$ head-and-shoulders-pattern/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^q=L3MkWGAkYGpjAwV2ZwN3BQV5ZmxjAQN1AmVyZwMaWGAkAQNjWGV2MFHmpFHlAz4yZ3RjWGV2LlHmpGNyZwMyMvHmpGNyZwMzWGAkWGV2MJpyZ3RlZQVjZQZlAwRlAQHmBPHlAzA5WGAkZFHlAaEaWGAkZvHlAatyZ3RyZwMhrvHmpGNyZwMzpPHmpGZjZPHlAzuhMlHmpGRyZwMjpPHmpJuzWGV2MzqjWGAkZN\%3D\%3D-1$
+RewriteRule ^img\.aspx$ files/uzWGV2MzqjWGAkZN---1_h0s8idrer4udaux7m3kyu6/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^introducing-broker/?$ introducing-broker/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^learn-to-trade/?$ learn-to-trade/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^metatrader-applications-back-on-apples-app-store/?$ metatrader-applications-back-on-apples-app-store/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^s=htCpGPJBzdXTXbvTWvfhtNzKQKVUge&search-type=strattic-sample&posts-per-page=1$
+RewriteRule ^page/4/?$ page/4/s-htCpGPJBzdXTXbvTWvfhtNzKQKVUge-search-type-strattic-sample-posts-per-page-1/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^pip-value/?$ pip-value/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^reits/?$ reits/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^rivian-ipo-day-traders/?$ rivian-ipo-day-traders/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=130&pid=86509$
+RewriteRule ^welcome-bonus/?$ welcome-bonus/lid-130-pid-86509/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^lid=34&pid=10170$
+RewriteRule ^welcome-bonus/?$ welcome-bonus/lid-34-pid-10170/ [L,R=301,QSD]
+RewriteCond %{QUERY_STRING} ^hss_channel=tw-1220711315255197696$
+RewriteRule ^what-is-crypto/?$ what-is-crypto/hss_channel-tw-1220711315255197696/ [L,R=301,QSD]
 
 # Create pretty URLs
 RewriteRule ^([^/]+)/$ $1.html [S=9]

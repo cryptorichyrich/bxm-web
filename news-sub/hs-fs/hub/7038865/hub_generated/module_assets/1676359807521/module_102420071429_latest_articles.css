@@ -1,0 +1,17 @@
+{% if is_listing_view %}
+.hs-search-field__bar {
+  position: relative;
+}
+ul.hs-search-field__suggestions {
+  position: absolute;
+  z-index: 12;
+  background-color: #fff;
+  top: 66px;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s all;
+}
+.hs-search-field.hs-search-field--open ul.hs-search-field__suggestions {
+  opacity: 1;
+}
+{% endif %}

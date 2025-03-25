@@ -1,0 +1,113 @@
+#hs-cmsf-branding {
+  all: initial !important;
+  animation: none !important;
+  bottom: 12px !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 30px !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+  -ms-flex-direction: column-reverse !important;
+  flex-direction: column-reverse !important;
+  left: 12px !important;
+  position: fixed !important;
+  z-index: 999997 !important;
+}
+
+#hs-cmsf-branding * {
+  all: unset !important;
+}
+
+#hs-cmsf-branding,
+#hs-cmsf-branding * {
+  border: 0 !important;
+  font-family: 'helvetica neue', helvetica, 'arial sans' !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: baseline !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__button {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  background-color: #ff5c35 !important;
+  background-size: 24px !important;
+  background: -o-linear-gradient(left, #ff5c35 26px, #fff 26px) !important;
+  background: linear-gradient(to right, #ff5c35 26px, #fff 26px) !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 999999 !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__button:hover {
+  background: -o-linear-gradient(left, #ff5c35 26px, #f5f8fa 26px) !important;
+  background: linear-gradient(to right, #ff5c35 26px, #f5f8fa 26px) !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__label {
+  color: #000 !important;
+  cursor: pointer !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  padding: 6px 8px !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__icon {
+  height: 24px !important;
+  padding: 0 4px !important;
+  width: 24px !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown {
+  background: #333 !important;
+  bottom: -3px !important;
+  color: #abacac !important;
+  font-weight: 500 !important;
+  padding-bottom: 3px !important;
+  position: absolute !important;
+  text-shadow: 0px 1px #000 !important;
+  -webkit-transform: translateY(-30px) !important;
+  -ms-transform: translateY(-30px) !important;
+  transform: translateY(-30px) !important;
+  z-index: 999998 !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown--collapsed {
+  display: none !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown-item {
+  cursor: pointer !important;
+  margin: 0 !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown-item:hover {
+  background-color: #444 !important;
+  color: #f7f8f8 !important;
+}
+
+#hs-cmsf-branding .hs-cmsf-branding__dropdown-link {
+  color: inherit !important;
+  display: block !important;
+  padding: 8px 12px !important;
+  text-decoration: none !important;
+}

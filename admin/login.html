@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+                                    <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/select2/select2.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/css/styles.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/css/layout.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/sonataadmin/css/tree.css?v1.6.7">
+                            <link rel="stylesheet" href="http://baxiamarkets.com/bundles/applicationsonataadmin/css/custom.css?v1.6.7">
+                                    <script>
+                    window.SONATA_CONFIG = {
+                        CONFIRM_EXIT: true,
+                        USE_SELECT2: true,
+                        USE_ICHECK: true,
+                        USE_STICKYFORMS: true                    };
+                    window.SONATA_TRANSLATIONS = {
+                        CONFIRM_EXIT: 'You\x20have\x20unsaved\x20changes.'
+                    };
+                    // http://getbootstrap.com/getting-started/#support-ie10-width
+                    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                        var msViewportStyle = document.createElement('style');
+                        msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                        document.querySelector('head').appendChild(msViewportStyle);
+                    }
+                </script>
+                                                <script src="http://baxiamarkets.com/bundles/sonatacore/vendor/jquery/dist/jquery.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonatacore/vendor/moment/min/moment.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/jquery-form/jquery.form.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/jquery/jquery.confirmExit.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonatacore/vendor/select2/select2.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/iCheck/icheck.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/readmore-js/readmore.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/Admin.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/treeview.js?v1.6.7"></script>
+                                    <script src="http://baxiamarkets.com/bundles/sonataadmin/sidebar.js?v1.6.7"></script>
+                                    <script src="../../4.12.1/standard/ckeditor.js"></script>
+        <title>
+                    Admin
+                                                        </title>
+	<link rel="canonical" href="https://baxiamarkets.com/admin/login/" />
+    </head>
+    <body class="sonata-bc login-page">
+    <div class="wrapper">
+                    <header class="main-header">
+                                    <noscript>
+                        <div class="noscript-warning">
+                            Javascript is disabled in your web browser. Some features will not work properly.
+                        </div>
+                    </noscript>
+                                                            </header>
+    <div class="login-box">
+                    <div class="login-logo">
+                <a href="/">
+                                            <div>
+                            <img style="width:64px;" src="http://baxiamarkets.com/bundles/webitforexsite/images/logo_admin.png?v1.0?v1.6.7" alt="CMS Admin">
+                        </div>
+                                                                <span>CMS Admin</span>
+                                    </a>
+            </div>
+                <div class="login-box-body">
+                                                                                <p class="login-box-msg">Authentication</p>
+                                    <form action="/" method="post" role="form">
+                        <input type="hidden" name="_csrf_token" value="emxzx-FGbV6JWc0PGY4rs1AprY11wp8cH0PVBffMV14"/>
+                        <div class="form-group has-feedback">
+                            <input class="form-control" id="username" name="_username" placeholder="Username" required="required" type="text" value=""/>
+                            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input class="form-control" id="password" name="_password" placeholder="Password" required="required" type="password"/>
+                            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" id="remember_me" name="_remember_me" value="on"/>
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <button type="submit" class="btn btn-primary btn-block btn-flat">Log in</button>
+                            </div>
+                        </div>
+                    </form>
+                    <a href="/">Forgotten password?</a>
+                                    </div>
+    </div>
+    </div>
+    </body>
+</html>

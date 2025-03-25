@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script data-wpmeteor-nooptimize="true">var _wpmeteor={"exclude":true,"gdpr":true,"rdelay":20000,"preload":true,"elementor-animations":true,"elementor-pp":true,"v":"3.4.7","rest_url":"https:\/\/baxiamarkets.com\/wp-json\/"};(()=>{try{new MutationObserver(function(){}),new Promise(function(){}),Object.assign({},{}),document.fonts.ready.then(function(){})}catch{s="wpmeteordisable=1",i=document.location.href,i.match(/[?&]wpmeteordisable/)||(o="",i.indexOf("?")==-1?i.indexOf("#")==-1?o=i+"?"+s:o=i.replace("#","?"+s+"#"):i.indexOf("#")==-1?o=i+"&"+s:o=i.replace("#","&"+s+"#"),document.location.href=o)}var s,i,o;})();
+</script><script data-wpmeteor-nooptimize="true">(()=>{var We=()=>Math.round(performance.now())/1e3;var h="addEventListener",pe="removeEventListener",p="getAttribute",v="setAttribute",j="removeAttribute",G="hasAttribute",Gt="querySelector",I=Gt+"All",C="appendChild",Q="removeChild",ue="createElement",T="tagName",ze="getOwnPropertyDescriptor",y="prototype",V="__lookupGetter__",fe="__lookupSetter__",f="DOMContentLoaded",u="load",Ee="error";var l=window,c=document,be=c.documentElement,Ye=()=>{},H=console.error;var $e=!0,K=class{constructor(){this.known=[]}init(){let t,n,s=(r,i)=>{if($e&&r&&r.fn&&!r.__wpmeteor){let o=function(a){return c[h](f,E=>{a.call(c,r,E,"jQueryMock")}),this};this.known.push([r,r.fn.ready,r.fn.init.prototype.ready]),r.fn.ready=o,r.fn.init.prototype.ready=o,r.__wpmeteor=!0}return r};window.jQuery||window.$,Object.defineProperty(window,"jQuery",{get(){return t},set(r){t=s(r,"jQuery")}}),Object.defineProperty(window,"$",{get(){return n},set(r){n=s(r,"$")}})}unmock(){this.known.forEach(([t,n,s])=>{t.fn.ready=n,t.fn.init.prototype.ready=s}),$e=!1}};var me="fpo:first-interaction",ge="fpo:replay-captured-events";var je="fpo:element-loaded",Te="fpo:images-loaded",k="fpo:the-end";var J="click",q=window,Qe=q.addEventListener.bind(q),Ke=q.removeEventListener.bind(q),Ae="removeAttribute",he="getAttribute",Ct="setAttribute",Se=["touchstart","touchmove","touchend","touchcancel","keydown","wheel"],Je=["mouseover","mouseout",J],Ut=["touchstart","touchend","touchcancel","mouseover","mouseout",J],N="data-wpmeteor-";var Ge="dispatchEvent",Xe=e=>{let t=new MouseEvent(J,{view:e.view,bubbles:!0,cancelable:!0});return Object.defineProperty(t,"target",{writable:!1,value:e.target}),t},Ce=class{static capture(){let t=!1,n=[],s=r=>{if(r.target&&Ge in r.target){if(!r.isTrusted)return;if(r.cancelable&&!Se.includes(r.type))try{r.preventDefault()}catch{}r.stopImmediatePropagation(),r.type===J?n.push(Xe(r)):Ut.includes(r.type)&&n.push(r),r.target[Ct](N+r.type,!0),t||(t=!0,q[Ge](new CustomEvent(me)))}};q.addEventListener(ge,()=>{Je.forEach(o=>Ke(o,s,{passive:!1,capture:!0})),Se.forEach(o=>Ke(o,s,{passive:!0,capture:!0}));let r;for(;r=n.shift();){var i=r.target;i[he](N+"touchstart")&&i[he](N+"touchend")&&!i[he](N+J)?(i[he](N+"touchmove")||n.push(Xe(r)),i[Ae](N+"touchstart"),i[Ae](N+"touchend")):i[Ae](N+r.type),i[Ge](r)}}),Je.forEach(r=>Qe(r,s,{passive:!1,capture:!0})),Se.forEach(r=>Qe(r,s,{passive:!0,capture:!0}))}};var Ze=Ce;var X=class{constructor(){this.l=[]}emit(t,n=null){this.l[t]&&this.l[t].forEach(s=>s(n))}on(t,n){this.l[t]||=[],this.l[t].push(n)}off(t,n){this.l[t]=(this.l[t]||[]).filter(s=>s!==n)}};var w=new X;var ve=c[ue]("span");ve[v]("id","elementor-device-mode");ve[v]("class","elementor-screen-only");var Bt=!1,et=()=>(Bt||c.body[C](ve),getComputedStyle(ve,":after").content.replace(/"/g,""));var tt=e=>e[p]("class")||"",rt=(e,t)=>e[v]("class",t),nt=()=>{l[h](u,function(){let e=et(),t=Math.max(be.clientWidth||0,l.innerWidth||0),n=Math.max(be.clientHeight||0,l.innerHeight||0),s=["_animation_"+e,"animation_"+e,"_animation","_animation","animation"];Array.from(c[I](".elementor-invisible")).forEach(r=>{let i=r.getBoundingClientRect();if(i.top+l.scrollY<=n&&i.left+l.scrollX<t)try{let a=JSON.parse(r[p]("data-settings"));if(a.trigger_source)return;let E=a._animation_delay||a.animation_delay||0,d,D;for(var o=0;o<s.length;o++)if(a[s[o]]){D=s[o],d=a[D];break}if(d){let Y=tt(r),$=d==="none"?Y:Y+" animated "+d,At=setTimeout(()=>{rt(r,$.replace(/\belementor-invisible\b/,"")),s.forEach(St=>delete a[St]),r[v]("data-settings",JSON.stringify(a))},E);w.on("fi",()=>{clearTimeout(At),rt(r,tt(r).replace(new RegExp("\b"+d+"\b"),""))})}}catch(a){console.error(a)}})})};var st="data-in-mega_smartmenus",ot=()=>{let e=c[ue]("div");e.innerHTML='<span class="sub-arrow --wp-meteor"><i class="fa" aria-hidden="true"></i></span>';let t=e.firstChild,n=s=>{let r=[];for(;s=s.previousElementSibling;)r.push(s);return r};c[h](f,function(){Array.from(c[I](".pp-advanced-menu ul")).forEach(s=>{if(s[p](st))return;(s[p]("class")||"").match(/\bmega-menu\b/)&&s[I]("ul").forEach(o=>{o[v](st,!0)});let r=n(s),i=r.filter(o=>o).filter(o=>o[T]==="A").pop();if(i||(i=r.map(o=>Array.from(o[I]("a"))).filter(o=>o).flat().pop()),i){let o=t.cloneNode(!0);i[C](o),new MutationObserver(E=>{E.forEach(({addedNodes:d})=>{d.forEach(D=>{if(D.nodeType===1&&D[T]==="SPAN")try{i[Q](o)}catch{}})})}).observe(i,{childList:!0})}})})};var _="readystatechange",S="message";var z="SCRIPT",m="data-wpmeteor-",b=Object.defineProperty,xe=Object.defineProperties,O="javascript/blocked",Ne=/^\s*(application|text)\/javascript|module\s*$/i,gt="requestAnimationFrame",ht="requestIdleCallback",ce="setTimeout",x=l.constructor.name+"::",ae=c.constructor.name+"::",vt=function(e,t){t=t||l;for(var n=0;n<this.length;n++)e.call(t,this[n],n,this)};"NodeList"in l&&!NodeList[y].forEach&&(NodeList[y].forEach=vt);"HTMLCollection"in l&&!HTMLCollection[y].forEach&&(HTMLCollection[y].forEach=vt);_wpmeteor["elementor-animations"]&&nt(),_wpmeteor["elementor-pp"]&&ot();var Z=[],ye=[],ee=[],se=!1,P=[],g={},Me=!1,Nt=0,M=c.visibilityState==="visible"?l[gt]:l[ce],yt=l[ht]||M;c[h]("visibilitychange",()=>{M=c.visibilityState==="visible"?l[gt]:l[ce],yt=l[ht]||M});var U=l[ce],De,F=["src","type"],W=Object,te="definePropert";W[te+"y"]=(e,t,n)=>e===l&&["jQuery","onload"].indexOf(t)>=0||(e===c||e===c.body)&&["readyState","write","writeln","on"+_].indexOf(t)>=0?(["on"+_,"on"+u].indexOf(t)&&n.set&&(g["on"+_]=g["on"+_]||[],g["on"+_].push(n.set)),e):e instanceof HTMLScriptElement&&F.indexOf(t)>=0?(e[t+"Getters"]||(e[t+"Getters"]=[],e[t+"Setters"]=[],b(e,t,{set(s){e[t+"Setters"].forEach(r=>r.call(e,s))},get(){return e[t+"Getters"].slice(-1)[0]()}})),n.get&&e[t+"Getters"].push(n.get),n.set&&e[t+"Setters"].push(n.set),e):b(e,t,n);W[te+"ies"]=(e,t)=>{for(let n in t)W[te+"y"](e,n,t[n]);for(let n of Object.getOwnPropertySymbols(t))W[te+"y"](e,n,t[n]);return e};var Pe=EventTarget[y][h],Lt=EventTarget[y][pe],le=Pe.bind(c),Ot=Lt.bind(c),B=Pe.bind(l),Dt=Lt.bind(l),wt=Document[y].createElement,de=wt.bind(c),_e=c.__proto__[V]("readyState").bind(c),it="loading";b(c,"readyState",{get(){return it},set(e){return it=e}});var ct=e=>P.filter(([t,,n],s)=>{if(!(e.indexOf(t.type)<0)){n||(n=t.target);try{let r=n.constructor.name+"::"+t.type;for(let i=0;i<g[r].length;i++)if(g[r][i]){let o=r+"::"+s+"::"+i;if(!Oe[o])return!0}}catch{}}}).length,oe,Oe={},ie=e=>{P.forEach(([t,n,s],r)=>{if(!(e.indexOf(t.type)<0)){s||(s=t.target);try{let i=s.constructor.name+"::"+t.type;if((g[i]||[]).length)for(let o=0;o<g[i].length;o++){let a=g[i][o];if(a){let E=i+"::"+r+"::"+o;if(!Oe[E]){Oe[E]=!0,c.readyState=n,oe=i;try{Nt++,!a[y]||a[y].constructor===a?a.bind(s)(t):a(t)}catch(d){H(d,a)}oe=null}}}}catch(i){H(i)}}})};le(f,e=>{P.push([new e.constructor(f,e),_e(),c])});le(_,e=>{P.push([new e.constructor(_,e),_e(),c])});B(f,e=>{P.push([new e.constructor(f,e),_e(),l])});B(u,e=>{Me=!0,P.push([new e.constructor(u,e),_e(),l]),R||ie([f,_,S,u])});var _t=e=>{P.push([e,c.readyState,l])},Rt=l[V]("onmessage"),kt=l[fe]("onmessage"),xt=()=>{Dt(S,_t),(g[x+"message"]||[]).forEach(e=>{B(S,e)}),b(l,"onmessage",{get:Rt,set:kt})};B(S,_t);var bt=new K;bt.init();var Ie=()=>{!R&&!se&&(R=!0,c.readyState="loading",M(He),M(A)),Me||B(u,()=>{Ie()})};B(me,()=>{Ie()});w.on(Te,()=>{Ie()});_wpmeteor.rdelay>=0&&Ze.capture();var re=[-1],at=e=>{re=re.filter(t=>t!==e.target),re.length||U(w.emit.bind(w,k))};var R=!1,A=()=>{let e=Z.shift();if(e)e[p](m+"src")?e[G]("async")?(e.isConnected&&re.push(e),Ue(e,at),U(A)):Ue(e,U.bind(null,A)):(e.origtype==O&&Ue(e),U(A));else if(ye.length){for(;ye.length;)Z.push(ye.shift());U(A)}else if(ct([f,_,S]))ie([f,_,S]),U(A);else if(Me)if(ct([u,S]))ie([u,S]),U(A);else if(re.length>1)yt(A);else if(ee.length){for(;ee.length;)Z.push(ee.shift());U(A)}else{if(l.RocketLazyLoadScripts)try{RocketLazyLoadScripts.run()}catch(t){H(t)}c.readyState="complete",xt(),bt.unmock(),R=!1,se=!0,l[ce](()=>at({target:-1}))}else R=!1},Mt=e=>{let t=de(z),n=e.attributes;for(var s=n.length-1;s>=0;s--)n[s].name.startsWith(m)||t[v](n[s].name,n[s].value);let r=e[p](m+"type");r?t.type=r:t.type="text/javascript",(e.textContent||"").match(/^\s*class RocketLazyLoadScripts/)?t.textContent=e.textContent.replace(/^\s*class\s*RocketLazyLoadScripts/,"window.RocketLazyLoadScripts=class").replace("RocketLazyLoadScripts.run();",""):t.textContent=e.textContent;for(let i of["onload","onerror","onreadystatechange"])e[i]&&(t[i]=e[i]);return t},Ue=(e,t)=>{let n=e[p](m+"src");if(n){let s=Pe.bind(e);e.isConnected&&t&&(s(u,t),s(Ee,t)),e.origtype=e[p](m+"type")||"text/javascript",e.origsrc=n,(!e.isConnected||e[G]("nomodule")||e.type&&!Ne.test(e.type))&&t&&t(new Event(u,{target:e}))}else e.origtype===O?(e.origtype=e[p](m+"type")||"text/javascript",e[j]("integrity"),e.textContent=e.textContent+`
+`):t&&t(new Event(u,{target:e}))},Ve=(e,t)=>{let n=(g[e]||[]).indexOf(t);if(n>=0)return g[e][n]=void 0,!0},lt=(e,t,...n)=>{if("HTMLDocument::"+f==oe&&e===f&&!t.toString().match(/jQueryMock/)){w.on(k,c[h].bind(c,e,t,...n));return}if(t&&(e===f||e===_)){let s=ae+e;g[s]=g[s]||[],g[s].push(t),se&&ie([e]);return}return le(e,t,...n)},dt=(e,t,...n)=>{if(e===f){let s=ae+e;Ve(s,t)}return Ot(e,t,...n)};xe(c,{[h]:{get(){return lt},set(){return lt}},[pe]:{get(){return dt},set(){return dt}}});var ne=c.createDocumentFragment(),He=()=>{ne.hasChildNodes()&&(c.head[C](ne),ne=c.createDocumentFragment())},pt={},Le=e=>{if(e)try{let t=new URL(e,c.location.href),n=t.origin;if(n&&!pt[n]&&c.location.host!==t.host){let s=de("link");s.rel="preconnect",s.href=n,ne[C](s),pt[n]=!0,R&&M(He)}}catch{}},we={},Pt=(e,t,n,s)=>{let r=de("link");r.rel=t?"modulepre"+u:"pre"+u,r.as="script",n&&r[v]("crossorigin",n),s&&r[v]("integrity",s);try{e=new URL(e,c.location.href).href}catch{}r.href=e,ne[C](r),we[e]=!0,R&&M(He)},Re=function(...e){let t=de(...e);if(!e||e[0].toUpperCase()!==z||!R)return t;let n=t[v].bind(t),s=t[p].bind(t),r=t[G].bind(t),i=t[V]("attributes").bind(t);return F.forEach(o=>{let a=t[V](o).bind(t),E=t[fe](o).bind(t);W[te+"y"](t,o,{set(d){return o==="type"&&d&&!Ne.test(d)?t[v](o,d):((o==="src"&&d||o==="type"&&d&&t.origsrc)&&n("type",O),d?t[v](m+o,d):t[j](m+o))},get(){let d=t[p](m+o);if(o==="src")try{return new URL(d,c.location.href).href}catch{}return d}}),b(t,"orig"+o,{set(d){return E(d)},get(){return a()}})}),t[v]=function(o,a){if(F.includes(o))return o==="type"&&a&&!Ne.test(a)?n(o,a):((o==="src"&&a||o==="type"&&a&&t.origsrc)&&n("type",O),a?n(m+o,a):t[j](m+o));n(o,a)},t[p]=function(o){let a=F.indexOf(o)>=0?s(m+o):s(o);if(o==="src")try{return new URL(a,c.location.href).href}catch{}return a},t[G]=function(o){return F.indexOf(o)>=0?r(m+o):r(o)},b(t,"attributes",{get(){return[...i()].filter(a=>a.name!=="type").map(a=>({name:a.name.match(new RegExp(m))?a.name.replace(m,""):a.name,value:a.value}))}}),t};Object.defineProperty(Document[y],"createElement",{set(e){e!==Re&&(De=e)},get(){return De||Re}});var Be=new Set,qe=new MutationObserver(e=>{e.forEach(({removedNodes:t,addedNodes:n,target:s})=>{t.forEach(r=>{r.nodeType===1&&z===r[T]&&"origtype"in r&&Be.delete(r)}),n.forEach(r=>{if(r.nodeType===1)if(z===r[T]){if("origtype"in r){if(r.origtype!==O)return}else if(r[p]("type")!==O)return;"origtype"in r||F.forEach(o=>{let a=r[V](o).bind(r),E=r[fe](o).bind(r);b(r,"orig"+o,{set(d){return E(d)},get(){return a()}})});let i=r[p](m+"src");Be.has(r)&&H("Inserted twice",r),r.parentNode?(Be.add(r),(i||"").match(/\/gtm.js\?/)||r[G]("async")?(ee.push(r),Le(i)):r[G]("defer")?(ye.push(r),Le(i)):(i&&!r[G]("nomodule")&&!we[i]&&(Ye(We(),"pre preload",Z.length),Pt(i,r[p](m+"type")=="module",r[G]("crossorigin")&&r[p]("crossorigin"),r[p]("integrity"))),Z.push(r))):(r[h](u,o=>o.target.parentNode[Q](o.target)),r[h](Ee,o=>o.target.parentNode[Q](o.target)),s[C](r))}else r[T]==="LINK"&&r[p]("as")==="script"&&(we[r[p]("href")]=!0)})})}),Tt={childList:!0,subtree:!0};qe.observe(c.documentElement,Tt);var It=HTMLElement[y].attachShadow;HTMLElement[y].attachShadow=function(e){let t=It.call(this,e);return e.mode==="open"&&qe.observe(t,Tt),t};var ut=W[ze](HTMLIFrameElement[y],"src");b(HTMLIFrameElement[y],"src",{get(){return this.dataset.fpoSrc?this.dataset.fpoSrc:ut.get.call(this)},set(e){delete this.dataset.fpoSrc,ut.set.call(this,e)}});w.on(k,()=>{(!De||De===Re)&&(Document[y].createElement=wt,qe.disconnect()),dispatchEvent(new CustomEvent(ge)),dispatchEvent(new CustomEvent(k))});var ke=e=>{let t,n;!c.currentScript||!c.currentScript.parentNode?(t=c.body,n=t.lastChild):(n=c.currentScript,t=n.parentNode);try{let s=de("div");s.innerHTML=e,Array.from(s.childNodes).forEach(r=>{r.nodeName===z?t.insertBefore(Mt(r),n):t.insertBefore(r,n)})}catch(s){H(s)}},ft=e=>ke(e+`
+`);xe(c,{write:{get(){return ke},set(e){return ke=e}},writeln:{get(){return ft},set(e){return ft=e}}});var Et=(e,t,...n)=>{if(x+f==oe&&e===f&&!t.toString().match(/jQueryMock/)){w.on(k,l[h].bind(l,e,t,...n));return}if(x+u==oe&&e===u){w.on(k,l[h].bind(l,e,t,...n));return}if(t&&(e===u||e===f||e===S&&!se)){let s=e===f?ae+e:x+e;g[s]=g[s]||[],g[s].push(t),se&&ie([e]);return}return B(e,t,...n)},mt=(e,t,...n)=>{if(e===u){let s=e===f?ae+e:x+e;Ve(s,t)}return Dt(e,t,...n)};xe(l,{[h]:{get(){return Et},set(){return Et}},[pe]:{get(){return mt},set(){return mt}}});var Fe=e=>{let t;return{get(){return t},set(n){return t&&Ve(e,n),g[e]=g[e]||[],g[e].push(n),t=n}}};B(je,e=>{let{target:t,event:n}=e.detail,s=t===l?c.body:t,r=s[p](m+"on"+n.type);s[j](m+"on"+n.type);try{let i=new Function("event",r);t===l?l[h](u,i.bind(t,n)):i.call(t,n)}catch(i){console.err(i)}});{let e=Fe(x+u);b(l,"onload",e),le(f,()=>{b(c.body,"onload",e)})}b(c,"onreadystatechange",Fe(ae+_));b(l,"onmessage",Fe(x+S));(()=>{let e=l.innerHeight,t=l.innerWidth,n=r=>{let o={"4g":1250,"3g":2500,"2g":2500}[(navigator.connection||{}).effectiveType]||0,a=r.getBoundingClientRect(),E={top:-1*e-o,left:-1*t-o,bottom:e+o,right:t+o};return!(a.left>=E.right||a.right<=E.left||a.top>=E.bottom||a.bottom<=E.top)},s=(r=!0)=>{let i=1,o=-1,a={},E=()=>{o++,--i||l[ce](w.emit.bind(w,Te),_wpmeteor.rdelay)};Array.from(c.getElementsByTagName("*")).forEach(d=>{let D,Y,$;if(d[T]==="IMG"){let L=d.currentSrc||d.src;L&&!a[L]&&!L.match(/^data:/i)&&((d.loading||"").toLowerCase()!=="lazy"||n(d))&&(D=L)}else if(d[T]===z)Le(d[p](m+"src"));else if(d[T]==="LINK"&&d[p]("as")==="script"&&["pre"+u,"modulepre"+u].indexOf(d[p]("rel"))>=0)we[d[p]("href")]=!0;else if((Y=l.getComputedStyle(d))&&($=(Y.backgroundImage||"").match(/^url\s*\((.*?)\)/i))&&($||[]).length){let L=$[0].slice(4,-1).replace(/"/g,"");!a[L]&&!L.match(/^data:/i)&&(D=L)}if(D){a[D]=!0;let L=new Image;r&&(i++,L[h](u,E),L[h](Ee,E)),L.src=D}}),c.fonts.ready.then(()=>{E()})};_wpmeteor.rdelay===0?le(f,s):B(u,s)})();})();
+//1.0.34
+</script><script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+var theplus_ajax_url = "/";
+		var theplus_ajax_post_url = "/";
+		var theplus_nonce = "10923297da";
+</script>
+<title>Demo | Baxia Markets</title>
+	<link rel="canonical" href="https://baxiamarkets.com/demo/" />
+<meta name="description" content="Try a free demo account with the Fastest Growing Forex Broker​, Baxia Markets"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="Demo | Baxia Markets"/>
+<meta property="og:description" content="Try a free demo account with the Fastest Growing Forex Broker​, Baxia Markets"/>
+<meta property="og:url" content="https://baxiamarkets.com/demo/"/>
+<meta property="og:site_name" content="Baxia Markets"/>
+<meta property="article:publisher" content="https://www.facebook.com/baxiamarkets/"/>
+<meta property="article:section" content="Uncategorized"/>
+<meta property="og:updated_time" content="2022-11-02T14:02:34-05:00"/>
+<meta property="og:image" />
+<meta property="og:image:secure_url" content="https://baxiamarkets.com/wp-content/uploads/2022/09/Baxia-leading-multi-asset-forex-broker.png"/>
+<meta property="og:image:width" content="601"/>
+<meta property="og:image:height" content="351"/>
+<meta property="og:image:alt" content="baxia leading multi asset forex broker"/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="article:published_time" content="2022-09-28T14:09:32-05:00"/>
+<meta property="article:modified_time" content="2022-11-02T14:02:34-05:00"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Demo | Baxia Markets"/>
+<meta name="twitter:description" content="Try a free demo account with the Fastest Growing Forex Broker​, Baxia Markets"/>
+<meta name="twitter:site" content="@baxiamarkets"/>
+<meta name="twitter:creator" content="@baxiamarkets"/>
+<meta name="twitter:image" />
+<meta name="twitter:label1" content="Time to read"/>
+<meta name="twitter:data1" content="2 minutes"/>
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://baxiamarkets.com/#place","address":{"@type":"PostalAddress","streetAddress":"Capital Union Bank Building","addressLocality":"Lyford Cay, Nassau","addressRegion":"New Providence","addressCountry":"The Bahamas"}},{"@type":["FinancialService","Organization"],"@id":"https://baxiamarkets.com/#organization","name":"https://baxiamarkets.com/","url":"https://baxiamarkets.com/","sameAs":["https://www.facebook.com/baxiamarkets/","https://twitter.com/baxiamarkets"],"email":"support@baxiamarkets.com","address":{"@type":"PostalAddress","streetAddress":"Capital Union Bank Building","addressLocality":"Lyford Cay, Nassau","addressRegion":"New Providence","addressCountry":"The Bahamas"},"logo":{"@type":"ImageObject","@id":"https://baxiamarkets.com/#logo","url":"https://baxiamarkets.com/wp-content/uploads/2021/06/Baxia-Logo_Yellow_Black-01.png","contentUrl":"https://baxiamarkets.com/wp-content/uploads/2021/06/Baxia-Logo_Yellow_Black-01.png","caption":"https://baxiamarkets.com/","inLanguage":"en-US","width":"1345","height":"272"},"priceRange":"$","openingHours":["Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-17:00"],"location":{"@id":"https://baxiamarkets.com/#place"},"image":{"@id":"https://baxiamarkets.com/#logo"},"telephone":"+000-000-000"},{"@type":"WebSite","@id":"https://baxiamarkets.com/#website","url":"https://baxiamarkets.com","name":"https://baxiamarkets.com/","publisher":{"@id":"https://baxiamarkets.com/#organization"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://baxiamarkets.com/wp-content/uploads/2022/09/Baxia-leading-multi-asset-forex-broker.png","url":"https://baxiamarkets.com/wp-content/uploads/2022/09/Baxia-leading-multi-asset-forex-broker.png","width":"601","height":"351","caption":"baxia leading multi asset forex broker","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://baxiamarkets.com/demo/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://baxiamarkets.com","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://baxiamarkets.com/demo/","name":"Demo"}}]},{"@type":"WebPage","@id":"https://baxiamarkets.com/demo/#webpage","url":"https://baxiamarkets.com/demo/","name":"Demo | Baxia Markets","datePublished":"2022-09-28T14:09:32-05:00","dateModified":"2022-11-02T14:02:34-05:00","isPartOf":{"@id":"https://baxiamarkets.com/#website"},"primaryImageOfPage":{"@id":"https://baxiamarkets.com/wp-content/uploads/2022/09/Baxia-leading-multi-asset-forex-broker.png"},"inLanguage":"en-US","breadcrumb":{"@id":"https://baxiamarkets.com/demo/#breadcrumb"}},{"@type":"Person","@id":"https://baxiamarkets.com/author/admin/","name":"Baxia Admin","url":"https://baxiamarkets.com/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/2cb2bc52bd016e6fe220c4dde186e5d9?s=96&d=mm&r=g","url":"https://secure.gravatar.com/avatar/2cb2bc52bd016e6fe220c4dde186e5d9?s=96&d=mm&r=g","caption":"Baxia Admin","inLanguage":"en-US"},"worksFor":{"@id":"https://baxiamarkets.com/#organization"}},{"@type":"Article","headline":"Demo | Baxia Markets","keywords":"demo","datePublished":"2022-09-28T14:09:32-05:00","dateModified":"2022-11-02T14:02:34-05:00","author":{"@id":"https://baxiamarkets.com/author/admin/","name":"Baxia Admin"},"publisher":{"@id":"https://baxiamarkets.com/#organization"},"description":"Try a free demo account with the Fastest Growing Forex Broker\u200b, Baxia Markets","name":"Demo | Baxia Markets","@id":"https://baxiamarkets.com/demo/#richSnippet","isPartOf":{"@id":"https://baxiamarkets.com/demo/#webpage"},"image":{"@id":"https://baxiamarkets.com/wp-content/uploads/2022/09/Baxia-leading-multi-asset-forex-broker.png"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://baxiamarkets.com/demo/#webpage"}}]}</script>
+<link rel="dns-prefetch" href="https://maps.googleapis.com/"/>
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="../wp-content/themes/hello-elementor/theme.min_ver-2.9.0.css" media="all"/>
+<link rel="stylesheet" id="elementor-frontend-css" href="../wp-content/plugins/elementor/assets/css/frontend-lite.min_ver-3.23.4.css" media="all"/>
+<style id="elementor-frontend-inline-css">
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
+</style>
+<link rel="stylesheet" id="eael-general-css" href="../wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min_ver-6.0.3.css" media="all"/>
+<link rel="stylesheet" id="eael-110-css" href="https://baxiamarkets.com/wp-content/uploads/essential-addons-elementor/eael-110.css?ver=1667397754" media="all"/>
+<link rel="stylesheet" id="sina-morphing-anim-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/sina-morphing.min_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-scroll-animation-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/de-scroll-animation_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-animation-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/de-reveal-animation_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-curtain-animation-revealer-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/revealer_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-curtain-animation-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/de-reveal-curtain-animation_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-letter-decolines-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/letter/decolines_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-letter-normalize-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/letter/normalize_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-letter-lettereffect-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/letter/lettereffect_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-reveal-letter-pater-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/letter/pater_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-staggering-animate-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/de_staggering/animate_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-staggering-css-css" href="../wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/css/de_staggering/de-staggering_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="premium-addons-css" href="../wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min_ver-4.10.50.css" media="all"/>
+<link rel="stylesheet" id="premium-pro-css" href="../wp-content/plugins/premium-addons-pro/assets/frontend/min-css/premium-addons.min_ver-2.9.18.css" media="all"/>
+<link rel="stylesheet" id="jkit-elements-main-css" href="../wp-content/plugins/jeg-elementor-kit/assets/css/elements/main_ver-2.6.8.css" media="all"/>
+<link rel="stylesheet" id="tf-font-awesome-css" href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min_ver-6.6.1.css" media="all"/>
+<link rel="stylesheet" id="tf-regular-css" href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min_ver-6.6.1.css" media="all"/>
+<link rel="stylesheet" id="tf-header-footer-css" href="../wp-content/plugins/themesflat-addons-for-elementor/assets/css/tf-header-footer_ver-6.6.1.css" media="all"/>
+<link rel="stylesheet" id="entrace-animation-css" href="../wp-content/plugins/themesflat-addons-for-elementor/assets/css/tf-entrace-animation_ver-6.6.1.css" media="all"/>
+<style id="rank-math-toc-block-style-inline-css">
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="qi-addons-for-elementor-grid-style-css" href="../wp-content/plugins/qi-addons-for-elementor/assets/css/grid.min_ver-1.7.8.css" media="all"/>
+<link rel="stylesheet" id="qi-addons-for-elementor-helper-parts-style-css" href="../wp-content/plugins/qi-addons-for-elementor/assets/css/helper-parts.min_ver-1.7.8.css" media="all"/>
+<link rel="stylesheet" id="qi-addons-for-elementor-style-css" href="../wp-content/plugins/qi-addons-for-elementor/assets/css/main.min_ver-1.7.8.css" media="all"/>
+<link rel="stylesheet" id="theplus-front-css-css" href="https://baxiamarkets.com/wp-content/uploads/theplus-addons/theplus-post-25217.min.css?ver=1725449858" media="all"/>
+<link rel="stylesheet" id="plus-icons-mind-css-css" href="../wp-content/plugins/theplus_elementor_addon/assets/css/extra/iconsmind.min_ver-5.6.3.css" media="all"/>
+<link rel="stylesheet" id="eael-25217-css" href="https://baxiamarkets.com/wp-content/uploads/essential-addons-elementor/eael-25217.css?ver=1667397754" media="all"/>
+<link rel="stylesheet" id="swiper-css" href="../wp-content/plugins/qi-addons-for-elementor/assets/plugins/swiper/8.4.5/swiper.min_ver-6.6.1.css" media="all"/>
+<link rel="stylesheet" id="elementor-post-5-css" href="../wp-content/uploads/elementor/css/post-5_ver-1725448548.css" media="all"/>
+<link rel="stylesheet" id="elementor-pro-css" href="../wp-content/plugins/elementor-pro/assets/css/frontend-lite.min_ver-3.23.3.css" media="all"/>
+<link rel="stylesheet" id="de-sticky-frontend-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/de-sticky-frontend_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="de-product-display-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/de-product-display_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="elementor-post-25217-css" href="https://baxiamarkets.com/wp-content/uploads/elementor/css/post-25217.css?ver=1725449858" media="all"/>
+<link rel="stylesheet" id="cute-alert-css" href="../wp-content/plugins/metform/public/assets/lib/cute-alert/style_ver-3.9.0.css" media="all"/>
+<link rel="stylesheet" id="text-editor-style-css" href="../wp-content/plugins/metform/public/assets/css/text-editor_ver-3.9.0.css" media="all"/>
+<link rel="stylesheet" id="hello-elementor-css" href="../wp-content/themes/hello-elementor/style.min_ver-2.9.0.css" media="all"/>
+<link rel="stylesheet" id="font-awesome-css" href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min_ver-4.7.0.css" media="all"/>
+<link rel="stylesheet" id="simple-line-icons-wl-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/simple-line-icons_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="htflexboxgrid-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/htflexboxgrid_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="slick-css" href="../wp-content/plugins/happy-elementor-addons/assets/vendor/slick/slick_ver-3.12.1.css" media="all"/>
+<link rel="stylesheet" id="dethemekit-widgets-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/dethemekit-widgets_ver-2.1.6.css" media="all"/>
+<style id="dethemekit-widgets-inline-css">
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce a.button,.woocommerce a.button:hover,.woocommerce button.button,.woocommerce button.button:hover,.woocommerce a.remove:hover,.woocommerce a.button.wc-backward,.woocommerce a.button.wc-backward:hover{background-color:#FFD700}.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce a.button,.woocommerce a.button:hover,.woocommerce button.button,.woocommerce button.button:hover, .woocommerce a.button.wc-backward,.woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled],.woocommerce .cart-collaterals .cart_totals .wc-proceed-to-checkout a.wc-forward{color:#4F067D}.woocommerce a.remove{color:#FFD700 !important}.woocommerce .woocommerce-cart-form a.button, .woocommerce .woocommerce-cart-form button.button[type="submit"], .woocommerce .cart-collaterals a.checkout-button, .woocommerce .return-to-shop a.button.wc-backward{border:1px  }.woocommerce-info,.woocommerce-message,.woocommerce-error{border-top-color:#4F067D}.woocommerce-info::before,.woocommerce-message::before,.woocommerce-error::before{color:#4F067D !important}Light Gray Custom{color:#F1F2F4 !important}Bx Light Purple{color:#8B69D3 !important}White{color:#FFFFFF !important}Black Custom{color:#1D1D1F !important}h1, h2, h3, h4, h5, h6{color:#FFD700}body, a{color:#1D1D1F}
+</style>
+<link rel="stylesheet" id="dethemekit-de-carousel-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/dethemekit-de-carousel_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-ekiticons-css" href="../wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons_ver-3.2.7.css" media="all"/>
+<link rel="stylesheet" id="hello-elementor-child-style-css" href="../wp-content/themes/hello-theme-child-master/style_ver-1.0.0.css" media="all"/>
+<link rel="stylesheet" id="ekit-widget-styles-css" href="../wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles_ver-3.2.7.css" media="all"/>
+<link rel="stylesheet" id="ekit-responsive-css" href="../wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive_ver-3.2.7.css" media="all"/>
+<link rel="stylesheet" id="happy-icons-css" href="../wp-content/plugins/happy-elementor-addons/assets/fonts/style.min_ver-3.12.1.css" media="all"/>
+<link rel="stylesheet" id="ecs-styles-css" href="../wp-content/plugins/dethemekit-for-elementor/assets/css/de_loop/ecs-style_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-jkiticon-css" href="../wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon_ver-2.6.8.css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-dticon-css" href="../wp-content/plugins/dethemekit-for-elementor/modules/controls/assets/css/dticon_ver-5.9.0.css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="../wp-content/plugins/happy-elementor-addons/assets/fonts/style.min_ver-3.12.1.css" media="all"/>
+<link rel="stylesheet" id="elementor-icons-happy-icons-css" href="../wp-content/plugins/happy-elementor-addons/assets/fonts/style.min_ver-3.12.1.css" media="all"/>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-1.12.4-wp.js?ver=6.6.1" id="jquery-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=6.6.1" id="tf-swiper-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/jquery-migrate-1.4.1-wp.js?ver=6.6.1" id="jquery-migrate-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://maps.googleapis.com/maps/api/js?key=&amp;libraries=places&amp;sensor=false" id="gmaps-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="dtk_ajax_load-js-extra">
+var ecs_ajax_params = {"ajaxurl":"/","posts":"{\"page\":0,\"pagename\":\"demo\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"demo\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"post_type\":[\"post\",\"page\",\"e-landing-page\"],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs_ajax_pagination.js?ver=2.1.6" id="dtk_ajax_load-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/happy-elementor-addons/assets/vendor/dom-purify/purify.min.js?ver=3.1.6" id="dom-purify-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/de_loop/ecs.js?ver=2.1.6" id="ecs-script-js"></script>
+<meta name="generator" content="WordPress 6.6.1"/>
+<style>.elementor-widget:not(:last-child) {
+    margin-bottom: 0 !important;
+}</style> <style>*:not(.elementor-editor-active) .plus-conditions--hidden {display: none;}</style>
+<meta name="generator" content="Elementor 3.23.4; features: e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<script data-wpmeteor-nooptimize="true">
+// Check if the twq function already exists
+if (!window.twq) {
+    // Define the twq function if it doesn't exist
+    !function(e,t,n,s,u,a){
+        e.twq||(s=e.twq=function(){
+            s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+        },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
+    }(window,document,'script');
+}
+// Call the twq function to configure
+twq('config','oi1eh');
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    var megaMenu = document.getElementById('header-megamenu');
+    function checkAndUpdateMegaMenu() {
+        var popup = document.getElementById('tncpopup');
+				var content = document.getElementById('content');
+        if (popup) {
+            var height = popup.offsetHeight;
+            megaMenu.style.top = `${height}px`;
+						content.style.marginTop = `${height}px`;
+        } else {
+            megaMenu.style.top = '0px';
+						content.style.marginTop = `0px`;	
+        }
+    }
+    function updateOnScroll() {
+				var popup = document.getElementById('tncpopup');
+				var content = document.getElementById('content');
+				megaMenu.style.left = '0px';
+				megaMenu.style.right = '0px';					
+        if (!popup && window.scrollY <= 0) {
+            megaMenu.style.top = '0px';
+						content.style.marginTop = `${megaMenu.offsetHeight}px`;			
+        }
+				else if(popup && window.scrollY<=popup.offsetHeight){
+						var height = popup.offsetHeight;
+						megaMenu.style.top = `${height}px`;
+						content.style.marginTop = `${height}px`;
+				}
+				else {
+            var popup = document.getElementById('tncpopup');
+            if (popup) {
+                var height = popup.offsetHeight;
+                megaMenu.style.top = `${height}px`;
+								content.style.marginTop = `${height}px`;					
+            }
+        }
+    }
+    // Initial check
+    checkAndUpdateMegaMenu();
+    // Set up an interval to check periodically (e.g., every 500ms)
+    setInterval(checkAndUpdateMegaMenu, 500);
+    // Update on scroll
+    window.addEventListener('scroll', updateOnScroll);
+    // Ensure the mega menu follows the scroll
+    megaMenu.style.position = 'fixed';
+		megaMenu.style.left = '0px';
+		megaMenu.style.right = '0px';
+    megaMenu.style.width = '100%'; // Adjust based on your layout
+});
+</script>
+<meta name="google-site-verification" content="M1l6KnKmWU_36O0U6OHQ23865RT96QoujqGIArLgBco"/>
+<script data-wpmeteor-nooptimize="true">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N8MCLLB');</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://cdn.pagesense.io/js/812761410/f67abf6f9f3742c6bab194b236c002d8.js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<link rel="stylesheet" href="../bootstrap/4.3.1/css/bootstrap.min.css" >
+<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="google_gtagjs" data-wpmeteor-src="https://www.googletagmanager.com/gtag/js?id=G-N29L8Z28LP" async></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="google_gtagjs-inline">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-N29L8Z28LP', {} );
+</script>
+<link rel="icon" href="../wp-content/uploads/2021/06/Favicon-16x16-FXBO-01.png" sizes="32x32"/>
+<link rel="icon" href="../wp-content/uploads/2021/06/Favicon-16x16-FXBO-01.png" sizes="192x192"/>
+<link rel="apple-touch-icon" href="../wp-content/uploads/2021/06/Favicon-16x16-FXBO-01.png"/>
+<meta name="msapplication-TileImage" content="https://baxiamarkets.com/wp-content/uploads/2021/06/Favicon-16x16-FXBO-01.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/></head>
+<body class="page-template page-template-elementor_canvas page page-id-25217 qodef-qi--no-touch qi-addons-for-elementor-1.7.8 theplus-preloader jkit-color-scheme elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-25217 elementor-page-28524 elementor-page-28522 elementor-page-1222 elementor-page-81 elementor-page-110">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8MCLLB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div data-elementor-type="wp-page" data-elementor-id="25217" class="elementor elementor-25217" data-elementor-post-type="page">
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-63af553f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="63af553f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-background-overlay"></div>
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7ac4938f" data-id="7ac4938f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-2a0720fe de_scroll_animation_no elementor-widget elementor-widget-image" data-id="2a0720fe" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style> <a href="/">
+<img fetchpriority="high" decoding="async" width="800" height="162" src="../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-1024x207.webp" class="attachment-large size-large wp-image-16999" alt="Baxia Markets logo footer" srcset="../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-1024x207.webp 1024w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-300x61.webp 300w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-768x155.webp 768w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow.webp 1345w" sizes="(max-width: 800px) 100vw, 800px"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-a29f098 elementor-absolute elementor-hidden-mobile de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="a29f098" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default"><a href="/">Baxia Markets Website</a></h2> </div>
+</div>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-inner-section elementor-element elementor-element-60335153 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60335153" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1e8d192e" data-id="1e8d192e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b89faa9 de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="b89faa9" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style> <div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-fa0d572 eael-dual-header-content-mobile-align-center eael-dual-header-content-align-center de_scroll_animation_no elementor-widget elementor-widget-eael-dual-color-header" data-id="fa0d572" data-element_type="widget" data-widget_type="eael-dual-color-header.default">
+<div class="elementor-widget-container">
+<div class="eael-dual-header">
+<h1 class="title">
+<span style="background: -webkit-linear-gradient(var( --e-global-color-a1ea0af ), var( --e-global-color-secondary ));-webkit-background-clip: text;-webkit-text-fill-color: transparent;" class="lead gradient-color">Learn To Trade Forex With </span>
+<span>Baxia Markets​</span>
+</h1>
+<span class="subtext"></span>
+<span class="eael-dch-svg-icon"></span> </div>
+</div>
+</div>
+<div class="elementor-element elementor-element-11690c1 de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="11690c1" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">   Fastest Growing Forex Broker</h2> </div>
+</div>
+<div class="elementor-element elementor-element-16d953c elementor-widget-divider--view-line de_scroll_animation_no elementor-widget elementor-widget-divider" data-id="16d953c" data-element_type="widget" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style> <div class="elementor-divider">
+<span class="elementor-divider-separator">
+</span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-4516e09 de_scroll_animation_no elementor-widget elementor-widget-premium-icon-list" data-id="4516e09" data-element_type="widget" data-settings="{&quot;rbadges_repeater&quot;:[]}" data-widget_type="premium-icon-list.default">
+<div class="elementor-widget-container">
+<ul class="premium-bullet-list-box">
+<li class="premium-bullet-list-content elementor-repeater-item-f985d2f premium-bullet-list-content-grow-lc">
+<div class="premium-bullet-list-text">
+<div class="premium-bullet-list-wrapper">
+<div class="premium-drawable-icon"><svg class="premium-svg-nodraw e-font-icon-svg e-fas-caret-right" aria-hidden="true" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div> </div>
+<span data-text="Access the award winning trading platform MT5"> Access the award winning trading platform MT5 </span>
+</div>
+</li>
+<li class="premium-bullet-list-content elementor-repeater-item-72158d9 premium-bullet-list-content-grow-lc">
+<div class="premium-bullet-list-text">
+<div class="premium-bullet-list-wrapper">
+<div class="premium-drawable-icon"><svg class="premium-svg-nodraw e-font-icon-svg e-fas-caret-right" aria-hidden="true" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div> </div>
+<span data-text="Practice with live streaming quotes"> Practice with live streaming quotes </span>
+</div>
+</li>
+<li class="premium-bullet-list-content elementor-repeater-item-06de971 premium-bullet-list-content-grow-lc">
+<div class="premium-bullet-list-text">
+<div class="premium-bullet-list-wrapper">
+<div class="premium-drawable-icon"><svg class="premium-svg-nodraw e-font-icon-svg e-fas-caret-right" aria-hidden="true" viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></div> </div>
+<span data-text="$50,000 in demo account"> $50,000 in demo account </span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="elementor-element elementor-element-e29dac5 de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="e29dac5" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Free Demo account for 30 days</h2> </div>
+</div>
+<div class="elementor-element elementor-element-6aba5672 elementor-mobile-align-center elementor-align-center de_scroll_animation_no elementor-widget elementor-widget-button" data-id="6aba5672" data-element_type="widget" data-widget_type="button.default">
+<div class="elementor-widget-container">
+<div class="elementor-button-wrapper">
+<a class="elementor-button elementor-button-link elementor-size-sm" href="../secure-sub/register/" target="_blank" rel="noopener">
+<span class="elementor-button-content-wrapper">
+<span class="elementor-button-text">TRY A DEMO ACCOUNT</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-a876a59 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a876a59" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c689f38" data-id="c689f38" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-a36d0aa" data-id="a36d0aa" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-9921317 de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="9921317" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Welcome to Baxia Markets</h2> </div>
+</div>
+<div class="elementor-element elementor-element-148f762 de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="148f762" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-7b1b854 de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="7b1b854" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<p class="elementor-heading-title elementor-size-default">Baxia Markets is a leading financial services provider, connecting traders to global markets with competitive pricing. Our mission is to provide traders with their best trading experience by offering exceptional technology advantages as well as multiple asset classes. Trading includes Forex, Metals, Energy & Indices. Baxia's global liquidity options ensure fast execution and some of the lowest spreads available.</p> </div>
+</div>
+<div class="elementor-element elementor-element-cc29cbf de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="cc29cbf" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<section class="theplus-equal-height elementor-section elementor-inner-section elementor-element elementor-element-a690d17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-tp-equal-height-loadded=".elementor-widget-container" data-particle_enable="false" data-particle-mobile-disabled="false" data-id="a690d17" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-cf1a387" data-id="cf1a387" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-27c4802 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="27c4802" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<link rel="stylesheet" href="../wp-content/plugins/elementor/assets/css/widget-icon-box.min.css"> <div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="jki jki-Computer-light"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Training and Education </span>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-211aa58" data-id="211aa58" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-40b316a elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="40b316a" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="icon icon-globe"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Global Operations Team </span>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-5536939" data-id="5536939" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-69f96c7 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="69f96c7" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="jki jki-chart2-light"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Research and Analysis </span>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-3fcaf86" data-id="3fcaf86" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-809e21b elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="809e21b" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="dticon dticon-chatbubbles-outline"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Multilingual Support </span>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-3787f3e" data-id="3787f3e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3afc7f9 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="3afc7f9" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="icon icon-bank"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Multi-jurisdiction Regulation </span>
+</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="elementor-element elementor-element-b30df15 elementor-widget-divider--view-line de_scroll_animation_no elementor-widget elementor-widget-divider" data-id="b30df15" data-element_type="widget" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator">
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-11bb4f5" data-id="11bb4f5" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-9050030 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9050030" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-background-overlay"></div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1a10de8" data-id="1a10de8" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7e6b9cb" data-id="7e6b9cb" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b5d2e6b de_scroll_animation_no ha-has-bg-overlay elementor-widget elementor-widget-heading" data-id="b5d2e6b" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Trade with one of the Fastest Growing Forex Brokers</h2> </div>
+</div>
+<div class="elementor-element elementor-element-3e2bafe de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="3e2bafe" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-d5792cb de_scroll_animation_no ha-has-bg-overlay elementor-widget elementor-widget-heading" data-id="d5792cb" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<p class="elementor-heading-title elementor-size-default">Baxia Markets is a multi-award winning, regulated forex broker with a global presence. Our company was founded in 2020 with the goal of becoming the leading online fintech and forex broker. Baxia Markets is a true ECN broker, not a Dealing Desk, specializing in Forex, Metals, Energy and Indices.</p> </div>
+</div>
+<div class="elementor-element elementor-element-055631d de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="055631d" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c133451" data-id="c133451" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-c3273cb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c3273cb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8f136a6" data-id="8f136a6" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1a8720a de_scroll_animation_no elementor-widget elementor-widget-heading" data-id="1a8720a" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Exceptional Services</h2> </div>
+</div>
+<div class="elementor-element elementor-element-0337bd2 de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="0337bd2" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-641f634 de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="641f634" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<section class="theplus-equal-height elementor-section elementor-inner-section elementor-element elementor-element-f9b63eb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-tp-equal-height-loadded=".elementor-widget-container" data-particle_enable="false" data-particle-mobile-disabled="false" data-id="f9b63eb" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5d88b8c" data-id="5d88b8c" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-06f68f4 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="06f68f4" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="jki jki-cityscape-light"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+No Conflict of Interest </span>
+</h3>
+<p class="elementor-icon-box-description">
+BX Standard offers STP execution and BX Zero offers ECN execution
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3e7426c" data-id="3e7426c" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7ba6668 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="7ba6668" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="icon icon-server-4"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Equinix Datacenters </span>
+</h3>
+<p class="elementor-icon-box-description">
+State-of-the-art servers based in Baxia New York (NY4) and Baxia London (LD5).
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-de0baf3" data-id="de0baf3" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-8dbde45 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="8dbde45" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-user-lock" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z"></path></svg> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Encryption Techniques </span>
+</h3>
+<p class="elementor-icon-box-description">
+SSL network security protocol to guarantee secure transactions with our clients.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="theplus-equal-height elementor-section elementor-inner-section elementor-element elementor-element-d7858bd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-tp-equal-height-loadded=".elementor-widget-container" data-particle_enable="false" data-particle-mobile-disabled="false" data-id="d7858bd" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1661afb" data-id="1661afb" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-eeccfe5 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="eeccfe5" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<svg aria-hidden="true" class="e-font-icon-svg e-fas-handshake" viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path></svg> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Bespoke Liquidity Solutions </span>
+</h3>
+<p class="elementor-icon-box-description">
+Access the interbank markets via our deep relationships with major banks and LPs.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-dfb1ce4" data-id="dfb1ce4" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3a916e1 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="3a916e1" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="hm hm-currency-exchange"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+Access 6 Asset Classes </span>
+</h3>
+<p class="elementor-icon-box-description">
+Trade all major global markets from one single terminal
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-21dd2b8" data-id="21dd2b8" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-55e19e9 elementor-view-default elementor-position-top elementor-mobile-position-top de_scroll_animation_no elementor-widget elementor-widget-icon-box" data-id="55e19e9" data-element_type="widget" data-widget_type="icon-box.default">
+<div class="elementor-widget-container">
+<div class="elementor-icon-box-wrapper">
+<div class="elementor-icon-box-icon">
+<span class="elementor-icon elementor-animation-">
+<i aria-hidden="true" class="jki jki-hours-support-light"></i> </span>
+</div>
+<div class="elementor-icon-box-content">
+<h3 class="elementor-icon-box-title">
+<span>
+24/6 Operations </span>
+</h3>
+<p class="elementor-icon-box-description">
+Back Office and Customer functions working 24/6 to provide coverage. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="elementor-element elementor-element-57abe9c de_scroll_animation_no elementor-widget elementor-widget-spacer" data-id="57abe9c" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-8f51ca3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8f51ca3" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-background-overlay"></div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0ee2bfa" data-id="0ee2bfa" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-421f75e" data-id="421f75e" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-38cae37 de_scroll_animation_no ha-has-bg-overlay elementor-widget elementor-widget-heading" data-id="38cae37" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h3 class="elementor-heading-title elementor-size-default">Get Started with Baxia</h3> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6242abe" data-id="6242abe" data-element_type="column">
+<div class="elementor-widget-wrap">
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-665eadce elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="665eadce" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2d06421f" data-id="2d06421f" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-inner-section elementor-element elementor-element-115257fe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="115257fe" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7b033162" data-id="7b033162" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-15d0c1be de_scroll_animation_no elementor-widget elementor-widget-text-editor" data-id="15d0c1be" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p class="p1">Baxia Global Limited is a company registered in Seychelles with registration number: 8426970-1, and is regulated by the Financial Services Authority of Seychelles with License number: SD104.</p><p class="p1">Baxia Limited is a company registered in The Bahamas with registration number: 177330 B, and is licensed and regulated by The Securities Commission of The Bahamas (SCB), (SIA-F234).<br/><br/><b>Risk Warning:</b> Margin trading involves a high level of risk, and may not be suitable for all investors. You should carefully consider your objectives, financial situation, needs and level of experience before entering into any margined transactions with Baxia Markets, and seek independent advice if necessary. Forex and CFDs are highly leveraged products which mean both gains and losses are magnified. You should only trade in these products if you fully understand the risks involved and can afford losses without adversely affecting your lifestyle (including the risk of losing the entirety of your initial investment). You must assess and consider them carefully before making any decision about using our products or services.</p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-504b6e42" data-id="504b6e42" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-28272811 de_scroll_animation_no elementor-widget elementor-widget-text-editor" data-id="28272811" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Any analysis, opinion, commentary or research-based material on our website is for information and educational purposes only and is not, under any circumstances, intended to be an offer, recommendation, advice or solicitation to buy or sell.</p><p>The information on this website is general in nature and doesn’t take into account your personal objectives, financial circumstances, or needs. It is not targeted at the general public of any specific country and is not intended for distribution to residents in any jurisdiction where that distribution would be unlawful or contravene regulatory requirements. Baxia Markets does not offer its services to residents of certain jurisdictions such as USA, Canada, Cuba, Sudan/Republic of Sudan, Syria, Iran, Iraq, South Sudan, Venezuela, Libya, Belarus, Afghanistan, Myanmar, Russia, China, Crimea, Donetsk, Luhansk, Palestine and North Korea.<br/><br/>This campaign is run by www.baxiamarkets.com. Terms & Conditions apply.</p> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-inner-section elementor-element elementor-element-188bf881 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="188bf881" data-element_type="section" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-76834c30" data-id="76834c30" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-15ed4c0a de_scroll_animation_no elementor-widget elementor-widget-image" data-id="15ed4c0a" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="/">
+<img decoding="async" width="300" height="61" src="../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-300x61.webp" class="attachment-medium size-medium wp-image-16999" alt="Baxia Markets logo footer" srcset="../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-300x61.webp 300w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-1024x207.webp 1024w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow-768x155.webp 768w, ../wp-content/uploads/2021/06/Baxia-Logo_white_yellow.webp 1345w" sizes="(max-width: 300px) 100vw, 300px"/> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-19c8f7e2" data-id="19c8f7e2" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7bfbae4 de_scroll_animation_no elementor-widget elementor-widget-text-editor" data-id="7bfbae4" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>© 2020 - 2022 Baxia </p> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+<link rel="stylesheet" id="jeg-dynamic-style-css" href="https://baxiamarkets.com/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.3.0" media="all"/>
+<link rel="stylesheet" id="font-awesome-5-all-css" href="../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min_ver-2.1.6.css" media="all"/>
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="https://baxiamarkets.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=6.0.3" media="all"/>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="eael-general-js-extra">
+var localize = {"ajaxurl":"/","nonce":"1b41c5b592","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/baxiamarkets.com\/demo\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"ParticleThemesData":{"default":"{\"particles\":{\"number\":{\"value\":160,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":true,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"repulse\"},\"onclick\":{\"enable\":true,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nasa":"{\"particles\":{\"number\":{\"value\":250,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":1,\"random\":true,\"anim\":{\"enable\":true,\"speed\":1,\"opacity_min\":0,\"sync\":false}},\"size\":{\"value\":3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":4,\"size_min\":0.3,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":1,\"direction\":\"none\",\"random\":true,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":600}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":250,\"size\":0,\"duration\":2,\"opacity\":0,\"speed\":3},\"repulse\":{\"distance\":400,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","bubble":"{\"particles\":{\"number\":{\"value\":15,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#1b1e34\"},\"shape\":{\"type\":\"polygon\",\"stroke\":{\"width\":0,\"color\":\"#000\"},\"polygon\":{\"nb_sides\":6},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.3,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":50,\"random\":false,\"anim\":{\"enable\":true,\"speed\":10,\"size_min\":40,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":200,\"color\":\"#ffffff\",\"opacity\":1,\"width\":2},\"move\":{\"enable\":true,\"speed\":8,\"direction\":\"none\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":false,\"mode\":\"push\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","snow":"{\"particles\":{\"number\":{\"value\":450,\"density\":{\"enable\":true,\"value_area\":800}},\"color\":{\"value\":\"#fff\"},\"shape\":{\"type\":\"circle\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"img\/github.svg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":5,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":500,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":2},\"move\":{\"enable\":true,\"speed\":6,\"direction\":\"bottom\",\"random\":false,\"straight\":false,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":true,\"mode\":\"bubble\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":400,\"line_linked\":{\"opacity\":0.5}},\"bubble\":{\"distance\":400,\"size\":4,\"duration\":0.3,\"opacity\":1,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}","nyan_cat":"{\"particles\":{\"number\":{\"value\":150,\"density\":{\"enable\":false,\"value_area\":800}},\"color\":{\"value\":\"#ffffff\"},\"shape\":{\"type\":\"star\",\"stroke\":{\"width\":0,\"color\":\"#000000\"},\"polygon\":{\"nb_sides\":5},\"image\":{\"src\":\"http:\/\/wiki.lexisnexis.com\/academic\/images\/f\/fb\/Itunes_podcast_icon_300.jpg\",\"width\":100,\"height\":100}},\"opacity\":{\"value\":0.5,\"random\":false,\"anim\":{\"enable\":false,\"speed\":1,\"opacity_min\":0.1,\"sync\":false}},\"size\":{\"value\":4,\"random\":true,\"anim\":{\"enable\":false,\"speed\":40,\"size_min\":0.1,\"sync\":false}},\"line_linked\":{\"enable\":false,\"distance\":150,\"color\":\"#ffffff\",\"opacity\":0.4,\"width\":1},\"move\":{\"enable\":true,\"speed\":14,\"direction\":\"left\",\"random\":false,\"straight\":true,\"out_mode\":\"out\",\"bounce\":false,\"attract\":{\"enable\":false,\"rotateX\":600,\"rotateY\":1200}}},\"interactivity\":{\"detect_on\":\"canvas\",\"events\":{\"onhover\":{\"enable\":false,\"mode\":\"grab\"},\"onclick\":{\"enable\":true,\"mode\":\"repulse\"},\"resize\":true},\"modes\":{\"grab\":{\"distance\":200,\"line_linked\":{\"opacity\":1}},\"bubble\":{\"distance\":400,\"size\":40,\"duration\":2,\"opacity\":8,\"speed\":3},\"repulse\":{\"distance\":200,\"duration\":0.4},\"push\":{\"particles_nb\":4},\"remove\":{\"particles_nb\":2}}},\"retina_detect\":true}"},"eael_login_nonce":"3ea8e3e5be","eael_register_nonce":"c7d0d6cdcc","eael_lostpassword_nonce":"3fc2ff8775","eael_resetpassword_nonce":"a6b93fb376"};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.0.3" id="eael-general-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/uploads/essential-addons-elementor/eael-110.js?ver=1667397754" id="eael-110-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/themesflat-addons-for-elementor/assets/js/anime.min.js?ver=6.6.1" id="tf-anime-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/themesflat-addons-for-elementor/assets/js/textanimation.js?ver=6.6.1" id="textanimation-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/themesflat-addons-for-elementor/assets/js/tf-animated.js?ver=6.6.1" id="tf-animated-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
+var qodefQiAddonsGlobal = {"vars":{"adminBarHeight":0,"iconArrowLeft":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0.5\" y1=\"16\" x2=\"33.5\" y2=\"16\"\/><line x1=\"0.3\" y1=\"16.5\" x2=\"16.2\" y2=\"0.7\"\/><line x1=\"0\" y1=\"15.4\" x2=\"16.2\" y2=\"31.6\"\/><\/svg>","iconArrowRight":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 34.2 32.3\" xml:space=\"preserve\" style=\"stroke-width: 2;\"><line x1=\"0\" y1=\"16\" x2=\"33\" y2=\"16\"\/><line x1=\"17.3\" y1=\"0.7\" x2=\"33.2\" y2=\"16.5\"\/><line x1=\"17.3\" y1=\"31.6\" x2=\"33.5\" y2=\"15.4\"\/><\/svg>","iconClose":"<svg  xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" viewBox=\"0 0 9.1 9.1\" xml:space=\"preserve\"><g><path d=\"M8.5,0L9,0.6L5.1,4.5L9,8.5L8.5,9L4.5,5.1L0.6,9L0,8.5L4,4.5L0,0.6L0.6,0L4.5,4L8.5,0z\"\/><\/g><\/svg>"}};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=1.7.8" id="qi-addons-for-elementor-script-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.3" id="jquery-ui-mouse-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.3" id="jquery-ui-slider-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="//baxiamarkets.com/wp-content/uploads/theplus-addons/theplus-post-25217.min.js?ver=1725449858" id="theplus-front-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.3" id="jquery-ui-draggable-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/jquery/jquery.ui.touch-punch.js?ver=0.2.2" id="jquery-touch-punch-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/uploads/essential-addons-elementor/eael-25217.js?ver=1667397754" id="eael-25217-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.0" id="cute-alert-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.2.7" id="elementskit-framework-js-frontend-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+		var elementskit = {
+			resturl: 'https://baxiamarkets.com/wp-json/elementskit/v1/',
+		}
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.2.7" id="ekit-widget-scripts-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.4" id="elementor-webpack-runtime-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.4" id="elementor-frontend-modules-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"/"},"nonces":{"floatingButtonsClickTracking":"c9bdc24af7"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":25217,"title":"Demo%20%7C%20Baxia%20Markets","excerpt":"","featuredImage":"https:\/\/baxiamarkets.com\/wp-content\/uploads\/2022\/09\/Baxia-leading-multi-asset-forex-broker.png"}};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-frontend-js-after">
+var jkit_ajax_url = "https://baxiamarkets.com/?jkit-ajax-request=jkit_elements", jkit_nonce = "6c0ce66cd3";
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.8" id="jkit-sticky-element-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="happy-elementor-addons-js-extra">
+var HappyLocalize = {"ajax_url":"/","nonce":"68f662a514","pdf_js_lib":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.12.1" id="happy-elementor-addons-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=6.0.3" id="font-awesome-4-shim-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/frontend/min-js/lottie.min.js?ver=2.1.6" id="lottie-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="premium-addons-js-extra">
+var PremiumSettings = {"ajaxurl":"/","nonce":"27b088cf95"};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/premium-addons.min.js?ver=4.10.50" id="premium-addons-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/ResizeSensor.min.js?ver=1.7.0" id="de-resize-sensor-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/sticky-sidebar/sticky-sidebar.min.js?ver=3.3.1" id="de-sticky-sidebar-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/lib/jsticky/jquery.jsticky.js?ver=1.1.0" id="jsticky-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/qi-addons-for-elementor/inc/plugins/elementor/assets/js/elementor.js?ver=6.6.1" id="qi-addons-for-elementor-elementor-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.23.3" id="elementor-pro-webpack-runtime-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"/","nonce":"2937746d28","urls":{"assets":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/baxiamarkets.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/baxiamarkets.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.23.3" id="elementor-pro-frontend-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.23.3" id="pro-elements-handlers-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="de-sticky-frontend-js-extra">
+var DeStickySettings = {"elements_data":{"sections":[],"columns":[]}};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/de-sticky-frontend.js?ver=2.1.6" id="de-sticky-frontend-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-icon-box.js?ver=2.1.6" id="de-active-icon-box-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/assets/js/de-active-column.js?ver=2.1.6" id="de-active-column-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.2.7" id="animate-circle-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="elementskit-elementor-js-extra">
+var ekit_config = {"ajaxurl":"/","nonce":"ed6e7b794a"};
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.2.7" id="elementskit-elementor-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/anime.min.js?ver=6.6.1" id="dethemekit-anime-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/scrollMonitor.js?ver=6.6.1" id="de-scroll-animation-scrollmonitor-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_scroll_animation.preview.js?ver=6.6.1" id="de-scroll-animation-preview-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/intersectionobserver.js?ver=6.6.1" id="de-reveal-animation-intersection-observer-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/charming.min.js?ver=6.6.1" id="de-reveal-letter-charming-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/lineMaker.js?ver=6.6.1" id="de-reveal-letter-lineMaker-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/imagesloaded.pkgd.min.js?ver=6.6.1" id="de-reveal-letter-imagesloaded-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/letter/textfx.js?ver=6.6.1" id="de-reveal-letter-textfx-js-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/main.js?ver=6.6.1" id="de-curtain-animation-main-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_reveal_animation.preview.js?ver=6.6.1" id="de-reveal-animation-preview-js"></script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" data-wpmeteor-src="https://baxiamarkets.com/wp-content/plugins/dethemekit-for-elementor/includes/ext/sina/assets/js/de_staggering/de_staggering.js?ver=6.6.1" id="de-staggering-js"></script>
+<div id="fb-root"></div>
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript">
+ // Function load FB's chat
+function loadFbChat(){
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "118775566632213");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+}
+  // Function to load Zoho's chat
+  function loadZohoChat() {
+    var zohoScript = document.createElement("script");
+    zohoScript.type = "text/javascript";
+    zohoScript.id = "zsiqscript";
+    zohoScript.defer = true;
+    zohoScript.src = "https://salesiq.zoho.com/widget";
+    var zohoTag = document.getElementsByTagName("script")[0];
+    zohoTag.parentNode.insertBefore(zohoScript, zohoTag);
+  }
+function fridayClose(){
+	var myTime=new Date(new Date().toLocaleString('en', {timeZone: 'America/New_York'}));
+	var closesOpentime=17;
+	var friday=5;
+	var saturday=6;
+	var sunday=0;
+   //Friday close at 17 hours
+	if((myTime.getDay()==friday) && myTime.getHours()>=closesOpentime){
+		return true;
+	}
+	//Check if Saturday
+	else if( myTime.getDay()==saturday){
+		return true;
+	}
+	//Sunday before 17 hour	
+	else if(myTime.getDay()==sunday && myTime.getHours()<closesOpentime){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+var today = new Date();
+var script = document.createElement('script');	
+if(fridayClose()){
+    // Weekend: Load Facebook chat and hide Zoho's chat
+    loadZohoChat();
+}
+else{
+    // Weekday: Load Zoho's chat and hide Facebook chat
+    loadZohoChat();
+}
+document.body.appendChild(script);
+</script>
+<script type="javascript/blocked" data-wpmeteor-type="text/javascript" id="zsiqchat">
+  var $zoho = $zoho || {};
+  $zoho.salesiq = $zoho.salesiq || {
+    widgetcode: "32f8c496776648f475b5d4e360b304e92decfe473e3c5d4c7664bdd7b9ef44defeb79731b60e202192c2895c9acefb61",
+    values: {},
+    ready: function () {}
+  };
+</script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+.anon-reg-box__callout,
+.anon-warning,
+.anon-footer,
+.anon-footer a,
+.anon-header__lang a {
+  color: #fff;
+}
+.anon-reg-box__btn a {
+  color: #ffd700;
+    border-color: #fff;
+}
+.anon-reg-box__btn a:hover {
+    background-color: #8b69d3;
+}
+.anon-footer a {
+    text-decoration: underline;
+}
+.anon-log-box__remember a {
+    color: #8b69d3;
+}
+.anon-header__lang__current:before {
+    background: url("images/lang_dark.svg");
+}
+.anon-body {
+    background: #4F067D;
+}
+.skin-minton .left-side, .skin-minton .main-sidebar, .skin-minton .wrapper{
+    background-color:#f1f2f4;   
+}
+/*
+    BIO START
+*/
+.sidebar-search__input{
+    /*background-color:#8b69d3; */
+    background-color:#f1f2f4;
+}
+
+.skin-minton .sidebar a{
+    color:#1D1D1F;
+}
+/*.sidebar-search__input{*/
+/*    color:#fcd700;*/
+/*}*/
+.sidebar-search__input, .sidebar-search{
+    color:#1D1D1F !important;
+    background-color:#f1f2f4;
+}
+.sidebar-search__btn{
+    color:#4F067 !important;
+}
+.sidebar-search__input::placeholder {
+    color: #1D1D1F;
+}
+
+/* Change the color of the icon inside the button */
+.sidebar-search__btn i {
+    color: #1D1D1F;
+}
+.skin-minton .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #fcd700;
+}
+
+.skin-minton .treeview-menu>li>a {
+    color: #1d1d1f;
+}
+
+.sidebar-search__input {
+    color:#666
+}
+
+.fa-search:before{
+    color:#1d1d1f;
+}
+.sidebar-search__input::placeholder,.text,.form__title,.wrapper header.main-header .breadcrumb-item__link,.cabinet__login .registration__content-text,.form__title,
+.item__header-title{
+    color: #1d1d1f;
+}
+.form__title{
+    color: #1d1d1f !important;
+}
+.skin-minton .main-header .navbar{
+    box-shadow:none;
+    background-color:#f1f2f4;
+}
+.content-wrapper, .content, .box-grid {
+    color: #4F067D; !important
+    text-decoration: #1d1d1f;
+}
+.content-wrapper, .content, .box-grid {
+    color: #4F067D; !important
+    text-decoration: #1d1d1f;
+}
+.profile-menu__item--active{
+    border-top: 3px solid #4f067d; !important
+}
+/*
+.skin-minton .sidebar-menu>li.active>a, .skin-minton .sidebar-menu>li:hover>a {
+    color: #4f067d;
+    background: #ffffff;
+    border-left-color: #ffffff;
+}*/
+.menu-filter {
+    color: #4b646f;
+    background: #ffffff;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    padding: 10px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: baseline;
+    height: 40px;
+}
+.menu-filter__input {
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 0 solid;
+    color: #4f067d;
+    flex: 1;
+}
+/*
+    Bio END
+*/
+.content-wrapper,
+.content,
+.box-grid{
+color: #1d1d1f;
+text-decoration: #1d1d1f;
+}
+
+.skin-minton .main-header .logo{
+    background: #f1f2f4 !important;
+}
+
+/*
+.btn.btn-xs.btn-danger.j-confirm
+*/
+#menu-upload-documents, #menu-my-agreements, #menu-individual-application,.table-with-buttons .btn.btn-xs.btn-danger.j-confirm{
+ display:none;   
+}
+
+.top-buttons__btn{
+    color:#ffffff;
+    background-color:#4f067d;
+    border-color: #4f067d;
+}
+.top-buttons__btn:hover{
+    color:#4f067d;
+    background-color:#fcd700; 
+    border-color: #8b69d3;
+}
+
+/*
+Proof of address's file foot note
+*/
+div.form-description.muted.form-description-text{
+    color:#C8102E
+;
+}
+
+.btn-wrapper .btn, .btn-wrapper .button{
+    background-color: transparent;
+    border: 1px solid #4f067d;
+    color:#4f067d;
+}
+
+.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"], .cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"] p,
+.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"], .cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"] p
+{
+    background-color: #ffd700;
+    color:#4f067d;   
+    padding:5px;
+}
+
+.btn-wrapper .btn:hover, .btn-wrapper .button:hover {
+    transition: background-color .2s linear,color .2s linear;
+    background-color: #ffd700;
+    color:#4f067d; 
+    border-color: #ffd700;
+}
+.wrapper header.main-header .breadcrumb-item__text {
+    color: #4f067d;
+}
+
+.cabinet__registration .header {
+    background:white;
+    border-radius:10px;
+}
+.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-treeview .nav-item:hover,
+.btn-wrapper .btn:focus, .btn-wrapper .button:focus{
+    background-color: #ffd700;
+    color:#4f067d !important;   
+    padding:5px;
+    transition: .2s;
+    border-radius:5px;
+}
+.btn-wrapper .btn.btn-default, .btn-wrapper .button.btn-default{
+    border-color:#4f067d;
+    color:#4f067d;
+}
+.craue_formflow_steplist .craue_formflow_current_step,.form-group.flat-choice select.form-control,.form-group.flat-choice select.form-control:focus,
+.form-group.flat-choice select.form-control:focus,.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-treeview .nav-item .nav-link.active .nav-icon,
+.profile__wrapper--help-desk .item__header .tab-nav.active, .profile__wrapper--help-desk .ticket__header .tab-nav.active,
+.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"] .nav-icon, .cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item .nav-link.active[href*="/"] .right{
+    color:#4f067d;
+}
+.craue_formflow_steplist .craue_formflow_current_step:after{
+    background: #ffd700;
+}
+section.header{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+@media (min-width:1025px){
+    .cabinet__registration .content{
+        padding:40px 30px !important;
+    }
+}
+.form-group.flat-integer input:focus, .form-group.flat-number input:focus, .form-group.flat-text input:focus,
+.form-group.flat-choice select.form-control:focus,
+.form-group.flat-choice .btn-group-multiselect .btn:focus, .form-group.flat-choice .btn-group-multiselect .multiselect:focus{
+border-color: #4f067d;
+    color: #1d1d1f;
+}
+.form-group .form-check input:checked:before,.form-group.switch-wrapper .switch.active .slider,
+.profile__wrapper--help-desk .item__header .tab-nav.active:after, .profile__wrapper--help-desk .ticket__header .tab-nav.active:after{
+    background: #4f067d;
+    border: 1px solid #4f067d;
+}
+.cabinet-base .sidebar-mini .wrapper aside.main-sidebar .sidebar nav .nav .nav-item {
+    font-weight: bold;
+}
+
+#menu-verification,#menu-messages,#menu-phone-verification,#menu-individual-application,
+/*body > div.wrapper > div.content-wrapper > section > div.content-body__wrapper > div > div > div:nth-child(2) > div > div > table > tbody > tr:nth-child(2) > td:nth-child(3) > div,*/
+body > div.wrapper > div.content-wrapper > section > div.content-body__wrapper > div > div > div:nth-child(1) > div > div > table > tbody > tr.profile-notification-preferences,
+body > div.wrapper > div.content-wrapper > section > div.content-body__wrapper > div > div > div:nth-child(1) > div > div > table > tbody > tr.profile-notification-smsNotificationEnabled
+/*body > div.wrapper > div.content-wrapper > section > div.content-body__wrapper > div > div > div:nth-child(2) > div > div > table > tbody > tr:nth-child(5) > td:nth-child(3) > div*/{
+ display:none;/*hide verify now button on client profile page*/   
+}
+
+i.fa.fa-check::before {
+    display: none;    /*To remove check mark for Phone verification*/
+
+
+}
+}
